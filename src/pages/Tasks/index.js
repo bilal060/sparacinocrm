@@ -1,12 +1,13 @@
-import * as React from 'react';
+import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import CreateButton from "../../components/createButton";
 import Heading from "../../components/heading";
-import { CampaignTable, OpportunitiesTable } from "../../components/table";
+import SubNav from "../../components/sub-nav";
+import { TaskTable } from "../../components/table";
 import "../../index.css";
 
-export default function Opportunities() {
+export default function Tasks() {
   return (
     <>
       <div
@@ -16,17 +17,18 @@ export default function Opportunities() {
         aria-labelledby="tasks-pill-tab"
       >
         <main class="custom-main-content mt-2 pt-4">
+          <SubNav item1="Emails" item2="Calender" item3="Tasks" />
           <div class="flex justify-between items-center">
-            <Heading heading="All Opportunities" />
-            <CreateButton buttonName="Create"/>
+            <Heading heading="My Tasks" />
+            <CreateButton buttonName="Create Task" />
           </div>
-          <OpportunitiesTable />
+          <TaskTable />
         </main>
-        <div className='flex justify-center items-center'>
-        <Stack spacing={2}>
-          <Pagination count={1}  />
-        </Stack>
-        </div>
+          <div className="flex justify-center items-center">
+            <Stack spacing={2}>
+              <Pagination count={1} />
+            </Stack>
+          </div>
       </div>
     </>
   );
