@@ -4,7 +4,7 @@ export default function SubNav(props) {
   return (
     <>
       <ul
-        class="nav nav-pills flex justify-center  text-center custom-pills pb-4 mt-2"
+        className="nav nav-pills flex justify-center  text-center custom-pills pb-[34px] mt-2"
         id="pills-tab"
         role="tablist"
       >

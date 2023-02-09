@@ -1,4 +1,5 @@
 import React from "react";
+import CreateButton from "../createButton";
 import Edit from "../edit";
 
 export function TaskTable() {
@@ -29,13 +30,13 @@ export function TaskTable() {
     },
   ];
   return (
-      <table class="table custom-task-table mt-3" style={{ width: "100%" }}>
-        <thead class="bg-transparent border-top-0">
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
           <tr>
-            <th scope="col" className="text-center">
+            <th scope="col" >
               <input type="checkbox" name="" value="" />
             </th>
-            <th scope="col" className="text-center relative">
+            <th scope="col" className=" relative">
               Subject
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,29 +44,29 @@ export function TaskTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[96px] top-[23px]"
+                className="absolute left-[65px] top-[33px]"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
                   fill="#2C4251"
                 />
               </svg>
             </th>
-            <th scope="col" className="text-center">
+            <th scope="col">
               Contact
             </th>
-            <th scope="col" className="text-center">
+            <th scope="col">
               Status
             </th>
-            <th scope="col" className="text-center">
+            <th scope="col">
               Priority
             </th>
-            <th scope="col" className="text-center">
+            <th scope="col">
               Due Date
             </th>
-            <th scope="col" className="text-center">
+            <th scope="col">
               Action
             </th>
           </tr>
@@ -90,7 +91,6 @@ export function TaskTable() {
       </table>
   );
 }
-
 export function CampaignTable() {
   const data = [
     {
@@ -120,8 +120,8 @@ export function CampaignTable() {
   ];
   return (
     <div className="App">
-      <table class="table custom-task-table mt-3" style={{ width: "100%" }}>
-        <thead class="bg-transparent border-top-0">
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
           <tr>
             <th scope="col">
               <input type="checkbox" name="" value="" />
@@ -134,11 +134,11 @@ export function CampaignTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[118px] top-[23px]"
+                className="absolute left-[92px] top-[33px]"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
                   fill="#2C4251"
                 />
@@ -158,7 +158,7 @@ export function CampaignTable() {
                 <th scope="row">
                   <input type="checkbox" />
                 </th>
-                <td>{campaign}</td>
+                <td className = "geeks">{campaign}</td>
                 <td>{contact}</td>
                 <td>{property}</td>
                 <td>{activity}</td>
@@ -204,8 +204,8 @@ export function OpportunitiesTable() {
   ];
   return (
     <div className="App">
-      <table class="table custom-task-table mt-3" style={{ width: "100%" }}>
-        <thead class="bg-transparent border-top-0">
+      <table className="table custom-task-table mt-3" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
           <tr>
             <th scope="col">
               <input type="checkbox" name="" value="" />
@@ -218,11 +218,11 @@ export function OpportunitiesTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[166px] top-[23px]"
+                className="absolute left-[55px] top-[32px]"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
                   fill="#2C4251"
                 />
@@ -257,5 +257,137 @@ export function OpportunitiesTable() {
         })}
       </table>
     </div>
+  );
+}
+export function ChangesTable() {
+  const data = [
+    {
+      source: "MLS",
+      address: "525 E Maude Ave, Sunnyvale",
+      owner: "Mrs. Cynthia Baird",
+      type: "listed",
+      date: "06/02/2022",
+      amount: "$6,950,000"
+    },
+    {
+      source: "MLS",
+      address: "525 E Maude Ave, Sunnyvale",
+      owner: "Mrs. Cynthia Baird",
+      type: "listed",
+      date: "06/02/2022",
+      amount: "$6,950,000"
+    },
+    {
+      source: "MLS",
+      address: "525 E Maude Ave, Sunnyvale",
+      owner: "Mrs. Cynthia Baird",
+      type: "listed",
+      date: "06/02/2022",
+      amount: "$6,950,000"
+    },
+  ];
+  return (
+    <div className="App">
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col">
+              <input type="checkbox" name="" value="" />
+            </th>
+            <th scope="col" className="relative">
+              Changes
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[75px] top-[32px]"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col">Contact</th>
+            <th scope="col">Property</th>
+            <th scope="col">Activity Type</th>
+            <th scope="col">Activity Date</th>
+            <th scope="col">Related</th>
+          </tr>
+        </thead>
+        {data.map(({ source, address,owner, type, date, amount }) => {
+          return (
+            <tbody>
+              <tr key={source}>
+                <th scope="row">
+                  <input type="checkbox" />
+                </th>
+                <td className = "geeks">{source}</td>
+                <td>{address}</td>
+                <td>{owner}</td>
+                <td>{type}</td>
+                <td>{date}</td>
+                <td>{amount}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+    </div>
+  );
+}
+export function ReportsTable() {
+  const data = [
+    {
+      name: "Calling",
+      action: <CreateButton buttonName="View" />,
+    },
+    {
+      name: "Calling",
+      action: <CreateButton buttonName="View" />,
+    },
+  ];
+  return (
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col" className="text-start relative pl-4">
+              Name
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[53px] top-[33px] "
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col" className="text-end pr-[131px]">
+              Action
+            </th>
+          </tr>
+        </thead>
+        {data.map(({ name,action }) => {
+          return (
+            <tbody>
+              <tr key={name}>
+                <td className="text-start-once pl-4">{name}</td>
+                <td className="dark-text text-end-once pr-[104px]">{action}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
   );
 }

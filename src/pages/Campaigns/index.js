@@ -10,19 +10,19 @@ export default function Campaigns() {
   return (
     <>
       <div
-        class="tab-pane fade in active"
+        className="tab-pane fade in active"
         id="tasks-pill"
         role="tabpanel"
         aria-labelledby="tasks-pill-tab"
       >
-        <main class="custom-main-content mt-2 pt-4">
-          <div class="flex justify-between items-center">
+        <main className="custom-main-content mt-2 pt-4">
+          <div className="flex justify-between items-center">
             <Heading heading="All Campaigns" />
             <CreateButton buttonName="Create"/>
           </div>
           <CampaignTable />
         </main>
-        <div className='flex justify-center items-center'>
+        <div className='pagination flex justify-center items-center'>
         <Stack spacing={2}>
           <Pagination count={1}  />
         </Stack>

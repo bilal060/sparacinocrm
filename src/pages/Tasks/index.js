@@ -7,24 +7,20 @@ import SubNav from "../../components/sub-nav";
 import { TaskTable } from "../../components/table";
 import "../../index.css";
 
+
 export default function Tasks() {
   return (
     <>
-      <div
-        class="tab-pane fade in active"
-        id="tasks-pill"
-        role="tabpanel"
-        aria-labelledby="tasks-pill-tab"
-      >
-        <main class="custom-main-content mt-2 pt-4">
-          <SubNav item1="Emails" item2="Calender" item3="Tasks" />
-          <div class="flex justify-between items-center">
+      <div>
+        <SubNav item1="Emails" item2="Calender" item3="Tasks" />
+        <main className="custom-main-content mt-2 pt-4">
+          <div className="flex justify-between items-center">
             <Heading heading="My Tasks" />
             <CreateButton buttonName="Create Task" />
           </div>
           <TaskTable />
         </main>
-          <div className="flex justify-center items-center">
+          <div className="pagination flex justify-center items-center">
             <Stack spacing={2}>
               <Pagination count={1} />
             </Stack>
