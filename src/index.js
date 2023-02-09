@@ -3,17 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './layouts/header';
 import Campaigns from './pages/Campaigns';
+import Changes from './pages/Changes';
 import Opportunities from './pages/Opportunities';
 import Tasks from './pages/Tasks';
 import reportWebVitals from './reportWebVitals';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Reports from './pages/Reports';
+import ContactDetails from './pages/ContactDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header/>
-    <Tasks />
-    {/* <Campaigns/>
-    <Opportunities/> */}
+    <Tasks /> 
+    <Campaigns/>
+     <Opportunities/>
+    <Changes/>
+    <Reports/>
+    {/* <ContactDetails/> */}
   </React.StrictMode>
 );
 
