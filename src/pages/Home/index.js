@@ -8,7 +8,7 @@ import Activity from '../../components/home/activity'
 
 const HomePage = () => {
     return (
-        <div className="custom-main-content mt-5 main-padding">
+        <div className="custom-main-content mt-5 main-padding" id='homepage'>
             <div className="custom-activity container-fluid p-0 ">
                 <div className="row">
                     <div className="col-3">

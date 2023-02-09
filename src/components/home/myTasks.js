@@ -2,6 +2,7 @@ import React from 'react'
 import Heading from '../heading'
 import GreaterThanIcon from '../images/greaterThanIcon'
 import LessThanIcon from '../images/lessThanIcon'
+import HomePageSelect from '../selects/homePageSelect'
 
 const mytask = [
     {
@@ -47,12 +48,20 @@ const MyTasks = () => {
 
             <div className='overflow-y-auto'>
                 <table className="table custom-task-table mt-3">
-                    <thead className="bg-transparent border-top-0 font-14 font-weight-700 text-secondary">
+                    <thead className="bg-transparent font-14 font-weight-700 text-secondary">
                         <tr>
                             <th scope="col">
-                                <input type="checkbox" name="" value="" />
+                                <div className='checkbox-main'>
+                                    <input type="checkbox" name="" value="" className='home-checkbox' />
+
+                                </div>
                             </th>
-                            <th scope="col">Subject</th>
+                            <th scope="col"> <form action="#" className="m-0">
+                                <HomePageSelect myname="week" myid="custom-week" myclassName="font-14 font-weight-700 text-secondary bg-transparent border-0 w-84px m-0">
+                                    <option value="This Week">Subject</option>
+                                    <option value="Week">Subject</option>
+                                </HomePageSelect>
+                            </form></th>
                             <th scope="col">Status</th>
                             <th scope="col">Priority</th>
                             <th scope="col">Due Date</th>
@@ -62,7 +71,7 @@ const MyTasks = () => {
                         {mytask.map((data, index) => {
                             return (
                                 <tr key={index} className="font-14 font-weight-400 text-secondary">
-                                    <th scope="row"><input type="checkbox" /></th>
+                                    <td scope="row"><input type="checkbox" className='home-checkbox' /></td>
                                     <td>{data.subject}</td>
                                     <td>{data.status}</td>
                                     <td>{data.priority}</td>

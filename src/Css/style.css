@@ -1991,3 +1991,33 @@ ul.clickMenu.selectmenu.SugarActionMenu li.sugar_action_button label.glyphicon.b
 .overflow-y-auto {
   overflow-y: auto;
 }
+
+.home-checkbox {
+  background: #FFFFFF;
+  border: 1px solid #A8ADB8;
+  box-shadow: inset 0px 1px 3px rgba(36, 39, 43, 0.25);
+  border-radius: 2px !important;
+}
+
+#homepage .checkbox-main {
+  border-radius: 2px;
+}
+
+#homepage .custom-task-table tr th {
+  border-top: 0 !important;
+}
+
+
+#homepage .custom-task-table  {
+  border-collapse: collapse;
+}
+
+#homepage .custom-task-table tbody tr {
+  border: 1px solid black !important;
+  border-radius: 2px;
+  gap: 9px !important;
+}
+
+.w-84px {
+  width: 84px !important;
+}
