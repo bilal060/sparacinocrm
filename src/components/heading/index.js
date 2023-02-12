@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Heading = ({ children }) => {
+const Heading = ({ children, classname }) => {
     return (
-        <h3 className='custom-heading'>{children}</h3>
+        <h3 className={`custom-heading ${classname}`}>{children}</h3>
     )
 }
 

@@ -756,18 +756,24 @@ label {
 }
 
 .custom-main-content .custom-filter-apply {
-  padding: 0px 42px;
-  margin: 0 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 16px;
+  gap: 10px;
+  width: 176px;
+  height: 36px;
+  outline: none;
+  border: none;
   background: #507A9B;
+  color: white;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.5px;
-  height: 36px;
-  border: 0;
-  width: 176px;
-
+  text-transform: uppercase;
 
 }
 
@@ -797,7 +803,6 @@ label {
   background: #FFFFFF;
   border: 1px solid #D1D3D9;
   height: 36px;
-  border-radius: 0 !important;
   width: 176px;
 
 }
@@ -820,15 +825,36 @@ label {
 }
 
 .custom-main-content .custom-pills li a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-weight: 300;
+  font-size: 14px !important;
+  line-height: 18px;
   color: #507A9B;
   text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  order: 1;
 }
 
-.custom-main-content .custom-pills .active a {
-  font-weight: 600;
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  background-color: transparent !important;
+  color: #507A9B !important;
+}
+
+.custom-main-content .custom-pills li a:hover {
+  color: #507A9B !important;
+  background-color: transparent !important;
+}
+
+.custom-main-content .custom-pills li a:active {
+  color: #507A9B !important;
+  background-color: transparent !important;
+}
+
+.custom-main-content .custom-pills li.active a {
+  font-weight: 800 !important;
 }
 
 .custom-main-content .custom-personal-detail .custom-card-heading,
@@ -907,8 +933,9 @@ label {
 
 .sliders_control {
   position: relative;
-  width: 150px;
+  min-width: 160px;
   margin-top: 18px;
+  max-width: 176px;
 }
 
 .sliders_control input[type=range]::-webkit-slider-thumb {
@@ -1988,8 +2015,8 @@ ul.clickMenu.selectmenu.SugarActionMenu li.sugar_action_button label.glyphicon.b
   height: 28px !important;
 }
 
-.overflow-y-auto {
-  overflow-y: auto;
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .home-checkbox {
@@ -1999,25 +2026,215 @@ ul.clickMenu.selectmenu.SugarActionMenu li.sugar_action_button label.glyphicon.b
   border-radius: 2px !important;
 }
 
-#homepage .checkbox-main {
-  border-radius: 2px;
-}
 
 #homepage .custom-task-table tr th {
   border-top: 0 !important;
 }
 
-
-#homepage .custom-task-table  {
-  border-collapse: collapse;
-}
-
-#homepage .custom-task-table tbody tr {
-  border: 1px solid black !important;
-  border-radius: 2px;
-  gap: 9px !important;
-}
-
 .w-84px {
   width: 84px !important;
+}
+
+
+
+.new {
+  padding: 50px;
+}
+
+.home-checkbox1 {
+  display: block;
+}
+
+.home-checkbox1 input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.home-checkbox1 label {
+  position: relative;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.home-checkbox1 label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  background: #FFFFFF;
+  border: 1px solid #A8ADB8;
+  box-shadow: inset 0px 1px 3px rgba(36, 39, 43, 0.25);
+  border-radius: 2px;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.home-checkbox1 input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 5px;
+  height: 11px;
+  border: solid #47505E;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-pagination a:nth-child(2) {
+  height: 24px;
+  width: 24px;
+  background: #507A9B;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.label-css {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  width: max-content;
+  height: 23px;
+  background: #EEEFF1;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.marketing-pipline {
+  background: rgba(240, 159, 85, 0.2);
+  border: 1px solid #F09F55;
+}
+
+.leads-pipline {
+  background: rgba(123, 97, 255, 0.2);
+  border: 1px solid #7B61FF;
+}
+
+.finalization-pipline {
+  background: rgba(22, 178, 150, 0.2);
+  border: 1px solid #16B296;
+}
+
+.custom-pills-poeple {
+  border: 0 !important;
+}
+
+.custom-pills-poeple .nav-item .nav-link {
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 18px;
+  color: #507A9B;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.custom-pills-poeple .nav-item .nav-link.active {
+  font-weight: 700 !important;
+}
+
+.m-w-180px {
+  min-width: 180px;
+}
+
+.m-w-130px {
+  min-width: 130px;
+}
+
+.m-w-100px {
+  min-width: 100px;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+
+@media only screen and (max-width:1300px) and (min-width:1100px) {
+  .allproperty-header .responsive-class-property {
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .responsive-class-property {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+@media only screen and (max-width:550px) {
+  .responsive-class-property-filter {
+    flex-direction: column !important;
+  }
+}
+
+.rounded-4 {
+  border-radius: 4px !important;
+}
+
+.filter-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 10px;
+  width: max-content;
+  height: 36px;
+  outline: none;
+  border: none;
+  background: #507A9B;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.orange-filter-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 16px;
+  gap: 10px;
+  width: max-content;
+  height: 36px;
+  outline: none;
+  border: none;
+background: #CDA12E;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.gap-8{
+  gap: 8px !important;
 }

@@ -28,7 +28,7 @@ const Sales = () => {
 
             {sales.map((data, index) => {
                 return (
-                    <div className="col-lg-4 col-md-6 mb-lg-0 mb-5" key={index}>
+                    <div className="col-lg-4 col-md-6 pb-lg-0 pb-5" key={index}>
                         <CustomCard >
                             <p className="custom-card-title mb-3 ">{data.name}</p>
                             <div className="d-flex justify-content-between align-items-center">

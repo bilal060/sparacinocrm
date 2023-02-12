@@ -6,30 +6,35 @@ import HomePageSelect from '../selects/homePageSelect'
 
 const mytask = [
     {
+        id: 1,
         subject: 'Call',
         status: 'Not Started',
         priority: 'High',
         dueDate: '06/23/2022'
     },
     {
+        id: 2,
         subject: 'Follow Up',
         status: 'Not Started',
         priority: 'High',
         dueDate: '06/23/2022'
     },
     {
+        id: 3,
         subject: 'Lorem',
         status: 'Not Started',
         priority: 'High',
         dueDate: '06/23/2022'
     },
     {
+        id: 4,
         subject: 'Ipsum',
         status: 'Not Started',
         priority: 'High',
         dueDate: '06/23/2022'
     },
     {
+        id: 5,
         subject: 'Call',
         status: 'Not Started',
         priority: 'High',
@@ -46,14 +51,16 @@ const MyTasks = () => {
 
             </div>
 
-            <div className='overflow-y-auto'>
+            <div className='overflow-x-auto'>
                 <table className="table custom-task-table mt-3">
                     <thead className="bg-transparent font-14 font-weight-700 text-secondary">
                         <tr>
                             <th scope="col">
                                 <div className='checkbox-main'>
-                                    <input type="checkbox" name="" value="" className='home-checkbox' />
-
+                                    <div className="home-checkbox1">
+                                        <input type="checkbox" id="head-checkbox" />
+                                        <label htmlFor="head-checkbox"></label>
+                                    </div>
                                 </div>
                             </th>
                             <th scope="col"> <form action="#" className="m-0">
@@ -71,7 +78,12 @@ const MyTasks = () => {
                         {mytask.map((data, index) => {
                             return (
                                 <tr key={index} className="font-14 font-weight-400 text-secondary">
-                                    <td scope="row"><input type="checkbox" className='home-checkbox' /></td>
+                                    <td scope="row">
+                                        <div className="home-checkbox1">
+                                            <input type="checkbox" id={data.id} />
+                                            <label htmlFor={data.id}></label>
+                                        </div>
+                                    </td>
                                     <td>{data.subject}</td>
                                     <td>{data.status}</td>
                                     <td>{data.priority}</td>
