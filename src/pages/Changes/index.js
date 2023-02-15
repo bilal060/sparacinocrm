@@ -2,7 +2,7 @@ import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import CreateButton from "../../components/createButton";
-import Heading from "../../components/heading";
+import {Heading} from "../../components/heading";
 import { ChangesTable } from "../../components/table";
 import "../../index.css";
 import SubNav from "../../components/sub-nav";

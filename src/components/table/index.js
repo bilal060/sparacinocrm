@@ -484,3 +484,374 @@ export function ContactPropertiesTable() {
     </div>
   );
 }
+export function ContactTaskTable() {
+  const data = [
+    {
+      subject: "Call",
+      status: "Not Started",
+      priority: "High",
+      date:"06/23/2022",
+      action: <Edit />,
+    },
+    {
+      subject: "Call",
+      status: "Not Started",
+      priority: "High",
+      date:"06/23/2022",
+      action: <Edit />,
+    },
+    {
+      subject: "Call",
+      status: "Not Started",
+      priority: "High",
+      date:"06/23/2022",
+      action: <Edit />,
+    },
+  ];
+  return (
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col" >
+              <input type="checkbox" name="" value="" />
+            </th>
+            <th scope="col" className=" relative">
+              Subject
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[65px] top-[33px]"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col">
+              Status
+            </th>
+            <th scope="col">
+              Priority
+            </th>
+            <th scope="col">
+              Due Date
+            </th>
+            <th scope="col">
+              Action
+            </th>
+          </tr>
+        </thead>
+        {data.map(({ subject, status, priority, date,action }) => {
+          return (
+            <tbody>
+              <tr key={subject}>
+                <th scope="row">
+                  <input type="checkbox" />
+                </th>
+                <td>{subject}</td>
+                <td>{status}</td>
+                <td>{priority}</td>
+                <td>{date}</td>
+                <td>{action}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+  );
+}
+export function ContactDocumentsTable() {
+  const data = [
+    {
+      Name: "Call",
+      File: "High",
+      Category:"",
+      status: "Active",
+      action: <Edit />,
+    },
+    {
+      Name: "Call",
+      File: "High",
+      Category:"",
+      status: "Active",
+      action: <Edit />,
+    },
+
+  ];
+  return (
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col" >
+              <input type="checkbox" name="" value="" />
+            </th>
+            <th scope="col" className=" relative">
+              Name
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[65px] top-[33px]"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col">
+              File
+            </th>
+            <th scope="col">
+              Category
+            </th>
+            <th scope="col">
+              Status
+            </th>
+            <th scope="col">
+              Action
+            </th>
+          </tr>
+        </thead>
+        {data.map(({ Name, File, Category, status,action }) => {
+          return (
+            <tbody>
+              <tr key={Name}>
+                <th scope="row">
+                  <input type="checkbox" />
+                </th>
+                <td>{Name}</td>
+                <td>{File}</td>
+                <td>{Category}</td>
+                <td>{status}</td>
+                <td>{action}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+  );
+} 
+export function ContactOpportunitiesTable() {
+  const data = [
+    {
+      name: "Selling 123 Fake Street",
+      sales: "Prospecting",
+      close:"06/17/2022",
+      amount: "$123.00",
+      assigned: "admin",
+      action: <Edit />,
+    },
+
+  ];
+  return (
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col" >
+              <input type="checkbox" name="" value="" />
+            </th>
+            <th scope="col" className=" relative">
+              Name
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[65px] top-[33px]"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col">
+            Sales Stage
+            </th>
+            <th scope="col">
+            Close
+            </th>
+            <th scope="col">
+            Amount
+            </th>
+            <th scope="col">
+            Assigned
+            </th>
+            <th scope="col">
+              Action
+            </th>
+          </tr>
+        </thead>
+        {data.map(({ Name, sales, close, amount, assigned, action }) => {
+          return (
+            <tbody>
+              <tr key={Name}>
+                <th scope="row">
+                  <input type="checkbox" />
+                </th>
+                <td>{Name}</td>
+                <td>{sales}</td>
+                <td>{close}</td>
+                <td>{amount}</td>
+                <td>{assigned}</td>
+                <td>{action}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+  );
+} 
+export function ContactCampaignsTable() {
+  const data = [
+    {
+      campaign: "Lorem Ipsum",
+      activity: "Lorem Ipsum",
+      date:"06/17/2022",
+      related: "",
+    },
+  ];
+  return (
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col" >
+              <input type="checkbox" name="" value="" />
+            </th>
+            <th scope="col" className=" relative">
+            Campaign
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[65px] top-[33px]"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col">
+            Activity
+            </th>
+            <th scope="col">
+              Date
+            </th>
+            <th scope="col">
+              Related
+            </th>
+          </tr>
+        </thead>
+        {data.map(({ campaign, activity, date, related }) => {
+          return (
+            <tbody>
+              <tr key={campaign}>
+                <th scope="row">
+                  <input type="checkbox" />
+                </th>
+                <td>{campaign}</td>
+                <td>{activity}</td>
+                <td>{date}</td>
+                <td>{related}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+  );
+} 
+export function ContactHistoryTable() {
+  const data = [
+    {
+      subject: "Call",
+      status: "Not Started",
+      Created: "06/23/2022",
+      date:"",
+      action: <Edit />,
+    },
+    {
+      subject: "Call",
+      status: "Not Started",
+      Created: "06/23/2022",
+      date:"06/23/2022",
+      action: <Edit />,
+    },
+
+  ];
+  return (
+      <table className="table custom-task-table mt-3 gfg" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col" >
+              <input type="checkbox" name="" value="" />
+            </th>
+            <th scope="col" className=" relative">
+              Subject
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[65px] top-[33px]"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col">
+              Status
+            </th>
+            <th scope="col">
+              Created
+            </th>
+            <th scope="col">
+              Due Date
+            </th>
+            <th scope="col">
+              Action
+            </th>
+          </tr>
+        </thead>
+        {data.map(({ subject, status, Created, date,action }) => {
+          return (
+            <tbody>
+              <tr key={subject}>
+                <th scope="row">
+                  <input type="checkbox" />
+                </th>
+                <td>{subject}</td>
+                <td>{status}</td>
+                <td>{Created}</td>
+                <td>{date}</td>
+                <td>{action}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+  );
+}

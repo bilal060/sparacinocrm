@@ -10,6 +10,10 @@ import reportWebVitals from './reportWebVitals';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Reports from './pages/Reports';
 import ContactDetails from './pages/ContactDetails';
+import PipelineLeads from './pages/Pipeline/Leads';
+import PipelineMarketing from './pages/Pipeline/Marketing';
+import PipelineFinalization from './pages/Pipeline/Finalization';
+import GIS from './pages/GIS';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +24,11 @@ root.render(
     <Opportunities/>
     <Changes/>
     <Reports/> */}
-    <ContactDetails/>
+    {/* <ContactDetails/> */}
+    {/* <PipelineLeads/>
+    <PipelineMarketing/>
+    <PipelineFinalization/> */}
+    <GIS/>
   </React.StrictMode>
 );
 
