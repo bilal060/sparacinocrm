@@ -1,6 +1,6 @@
 import * as React from 'react';
 import CreateButton from "../../components/createButton";
-import Heading from "../../components/heading";
+import {Heading} from "../../components/heading";
 import CustomPagination from '../../components/pagination';
 import { OpportunitiesTable } from "../../components/table";
 import "../../index.css";

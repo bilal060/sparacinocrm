@@ -1061,7 +1061,7 @@ label {
 }
 
 .user-img {
-  /* background-image: url("/sparacinocrm/custom/themes/images/user.png"); */
+  background-image: url("../src/images/user.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1626,7 +1626,9 @@ label {
   line-height: 18px;
   background: #ffffff;
   width: 464px;
-  height: calc(100vh - 330px);
+  /* height: calc(100vh - 330px); */
+  height: calc(100vh - 190px);
+
 }
 
 #propertylistinmap .property-list-map .list-header {
@@ -2313,4 +2315,7 @@ input[type="checkbox"] {
   .modal-xl {
     max-width: 1140px;
   }
+}
+.height-36{
+  height: 36px !important;
 }
