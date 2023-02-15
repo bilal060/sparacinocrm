@@ -7,6 +7,7 @@ import { ChangesTable } from "../../components/table";
 import "../../index.css";
 import SubNav from "../../components/sub-nav";
 import Dropdown from "../../components/dropdown";
+import CustomPagination from "../../components/pagination";
 
 export default function Changes() {
   return (
@@ -61,11 +62,7 @@ export default function Changes() {
           </div>
           <ChangesTable />
         </main>
-        <div className="pagination flex justify-center items-center">
-          <Stack spacing={2}>
-            <Pagination count={1} />
-          </Stack>
-        </div>
+        <CustomPagination count="1"/>
       </div>
     </>
   );
