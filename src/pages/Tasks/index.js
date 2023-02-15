@@ -1,8 +1,7 @@
 import * as React from "react";
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
 import CreateButton from "../../components/createButton";
 import Heading from "../../components/heading";
+import CustomPagination from "../../components/pagination";
 import SubNav from "../../components/sub-nav";
 import { TaskTable } from "../../components/table";
 import "../../index.css";
@@ -20,11 +19,7 @@ export default function Tasks() {
           </div>
           <TaskTable />
         </main>
-          <div className="pagination flex justify-center items-center">
-            <Stack spacing={2}>
-              <Pagination count={1} />
-            </Stack>
-          </div>
+          <CustomPagination count="1"/>
       </div>
     </>
   );

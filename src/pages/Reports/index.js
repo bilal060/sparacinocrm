@@ -1,10 +1,9 @@
 import * as React from "react";
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
 import Heading from "../../components/heading";
 import {ReportsTable } from "../../components/table";
 import "../../index.css";
 import SubNav from "../../components/sub-nav";
+import CustomPagination from "../../components/pagination";
 
 export default function Reports() {
   return (
@@ -54,11 +53,7 @@ export default function Reports() {
           </div>
           <ReportsTable />
         </main>
-        <div className="pagination flex justify-center items-center">
-          <Stack spacing={2}>
-            <Pagination count={1} />
-          </Stack>
-        </div>
+        <CustomPagination count="1"/>
       </div>
     </>
   );

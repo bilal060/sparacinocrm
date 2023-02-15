@@ -391,3 +391,96 @@ export function ReportsTable() {
       </table>
   );
 }
+//Contact Details Page Tables
+export function ContactPropertiesTable() {
+  const data = [
+    {
+      Id: "51903179",
+      Address: "6321 Dover St",
+      City: "Oakland",
+      State: "CA",
+      Zip: "94609",
+      Area: "10,598",
+      Units: "18",
+      Action:<Edit/>
+    },
+    {
+      Id: "51903179",
+      Address: "6321 Dover St",
+      City: "Oakland",
+      State: "CA",
+      Zip: "94609",
+      Area: "10,598",
+      Units: "18",
+      Action:<Edit/>
+    },
+    {
+      Id: "51903179",
+      Address: "6321 Dover St",
+      City: "Oakland",
+      State: "CA",
+      Zip: "94609",
+      Area: "10,598",
+      Units: "18",
+      Action:<Edit/>
+    },
+  ];
+  return (
+    <div className="App">
+      <table className="table custom-task-table mt-3" style={{ width: "100%" }}>
+        <thead className="bg-transparent border-top-0">
+          <tr>
+            <th scope="col">
+              <input type="checkbox" name="" value="" />
+            </th>
+            <th scope="col" className="relative">
+           ATTOM ID
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                className="absolute left-[80px] top-[32px]"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M1.40176 0.975586L0 2.31745L6 7.97559L12 2.31745L10.5982 0.975586L6 5.29187L1.40176 0.975586Z"
+                  fill="#2C4251"
+                />
+              </svg>
+            </th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Zip</th>
+            <th scope="col">Area</th>
+            <th scope="col">Units</th>
+            <th scope="col">Action</th>
+
+          </tr>
+        </thead>
+        {data.map(({Id, Address, City,State, Zip, Area, Units,Action }) => {
+          return (
+            <tbody>
+              <tr key={Id}>
+                <th scope="row">
+                  <input type="checkbox" />
+                </th>
+                <td>{Id}</td>
+                <td>{Address}</td>
+                <td >{City}</td>
+                <td>{State}</td>
+                <td>{Zip}</td>
+                <td>{Area}</td>
+                <td>{Units}</td>
+                <td>{Action}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+    </div>
+  );
+}

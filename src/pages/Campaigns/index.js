@@ -1,10 +1,9 @@
 import * as React from 'react';
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
 import CreateButton from "../../components/createButton";
 import Heading from "../../components/heading";
 import { CampaignTable } from "../../components/table";
 import "../../index.css";
+import CustomPagination from '../../components/pagination';
 
 export default function Campaigns() {
   return (
@@ -22,11 +21,7 @@ export default function Campaigns() {
           </div>
           <CampaignTable />
         </main>
-        <div className='pagination flex justify-center items-center'>
-        <Stack spacing={2}>
-          <Pagination count={1}  />
-        </Stack>
-        </div>
+        <CustomPagination count="1"/>
       </div>
     </>
   );
