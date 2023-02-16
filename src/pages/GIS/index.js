@@ -1,6 +1,6 @@
 import React from 'react'
 import { GISCard } from '../../components/card'
-
+import './map'
 export default function GIS() {
   return (
     <>
@@ -2274,11 +2274,12 @@ export default function GIS() {
                 <GISCard location="525 Roosevelt Ave, Sunnyvale" neighborhood="Rockridge" area="10,598" units="18" type="Apartment House" />
                 <GISCard location="525 Roosevelt Ave, Sunnyvale" neighborhood="Rockridge" area="10,598" units="18" type="Apartment House" />
                 <GISCard location="525 Roosevelt Ave, Sunnyvale" neighborhood="Rockridge" area="10,598" units="18" type="Apartment House" />
-            </div>
+            </div>  
 
         </div>
     </div>
 </div>
+<div id="map"></div>
 </>
   )
 }

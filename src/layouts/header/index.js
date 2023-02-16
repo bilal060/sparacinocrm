@@ -8,9 +8,6 @@ import UserIcon from "../../assets/images/svg/UserIcon";
 import MenuList from "./MenuList";
 
 function AppHeader() {
-
-
-
     return (
         <>
             <header class="custom-header">

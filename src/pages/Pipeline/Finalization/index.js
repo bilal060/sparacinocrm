@@ -14,7 +14,7 @@ export default function PipelineFinalization() {
         role="tabpanel"
         aria-labelledby="pipeline-finaliztion-pill-tab"
       >
-        <main class="custom-main-content mt-2 pt-0">
+        <main class="custom-main-content pt-0">
           <h1 class="custom-heading">Finalization</h1>
           <div class="d-inline-flex align-items-end w-100">
             <div class="pipeline-item  d-flex align-items-end">

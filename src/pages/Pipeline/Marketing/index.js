@@ -9,7 +9,7 @@ export default function PipelineMarketing() {
     <main class="  pt-0 ">
       <SubNav item1="Pipeline" item2="Finalization" item3="Marketing" />
 
-      <div class="tab-content mt-5 pt-5" id="pills-tabContent">
+      <div class="tab-content " id="pills-tabContent">
         <div
           class="tab-pane fade in active"
           id="pipeline-leads-pill"
