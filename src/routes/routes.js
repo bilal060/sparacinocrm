@@ -9,6 +9,8 @@ import Tasks from '../pages/Tasks'
 import PipelineMarketing from '../pages/Pipeline/Marketing';
 import PipelineLeads from '../pages/Pipeline/Leads';
 import PipelineFinalization from '../pages/Pipeline/Finalization';
+import ContactDetails from '../pages/ContactDetails';
+import Changes from '../pages/Changes';
 
 // import PeoplesPage from '../pages/Peoples';
 // import PipelinePage from '../pages/Pipeline';
@@ -23,6 +25,8 @@ function AppRoutes() {
             {/* <Route path='/people' element={<PeoplesPage />} /> */}
             {/* <Route path='/pipeline' element={<PipelinePage />} /> */}
             <Route path='/campaigns' element={<CampaignsPage />} />
+            <Route path='/ContactDetails' element={<ContactDetails />} />
+            <Route path='/Changes' element={<Changes />} />
             <Route path='/opportunities' element={<OpportunitiesPage />} />
             <Route path='/GIS' element={<GIS />} />
             <Route path="/Tasks" element={<Tasks/>}/>

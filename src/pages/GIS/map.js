@@ -1,74 +1,41 @@
-// mapboxgl.accessToken = 'pk.eyJ1IjoiYmlsYWxsIiwiYSI6ImNsY3l1YzB2bDA0bHYzcXFvN2ZkODBmMDUifQ.SzofkdBg0GBjQP-rQ5WYbw';
-// const map = new mapboxgl.Map({
-//   container: 'map', 
-//   style: 'mapbox://styles/bilall/clcz47x23014a14pgt2ggh79j',
-//   center: [-122.244963, 37.796840], 
-//   zoom: 17
-// });
+import GoogleMaps from "google-map-react";
+import React from "react";
+import { Map, Marker } from "google-maps-react";
 
-// map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'bottom-right');
+const targets = [
+  { lat: 35.64860429083234, lng: 138.57693376912908 },
+  { lat: 35.64760429083234, lng: 138.57493376912908 }
+];
 
-// const draw = new MapboxDraw({
-//   displayControlsDefault: false,
-// });
-// document.getElementById('DrawPolygon').onclick = function DrawPolygon() {
-//   draw.changeMode('draw_polygon');
-// }
-// map.addControl(draw);
+export default function Create() {
+  const defaultLatLng = {
+    lat: 35.64860429083234,
+    lng: 138.57693376912908
+  };
 
-
-// map.on('click', (event) => {
-//   const features = map.queryRenderedFeatures(event.point, {
-//     layers: ['parcels']
-//   });
-//   if (!features.length) {
-//     return;
-//   }
-//   const feature = features[0];
-//   console.log(features)
-//   const popup = new mapboxgl.Popup({ offset: [0, -15] })
-//     .setLngLat(event.lngLat)
-//     .setHTML(
-//       `<h3>${feature.properties.SitusAddress}</h3><p>${feature.properties.MailingAddressCityState}</p>`
-//     )
-//     .addTo(map);
-// });
-
-// // After the last frame rendered before the map enters an "idle" state.
-// map.on('idle', () => {
-//   if (!map.getLayer('parcels')) {
-//     return;
-//   }
-
-//   const toggleableLayerIds = ['parcels'];
-
-//   for (const id of toggleableLayerIds) {
-//     // Skip layers that already have a button set up.
-//     if (document.getElementById(id)) {
-//       continue;
-//     }
-
-
-//     // Show or hide layer when the toggle is clicked.
-//     document.getElementById('layersbtn').onclick = function () {
-//       // debugger
-//       const ParcleLayer = 'parcels';
-
-//       const visibility = map.getLayoutProperty(
-//         ParcleLayer,
-//         'visibility'
-//       );
-
-//       if (visibility === 'visible') {
-//         map.setLayoutProperty(ParcleLayer, 'visibility', 'none');
-//       } else {
-//         map.setLayoutProperty(
-//           ParcleLayer,
-//           'visibility',
-//           'visible'
-//         );
-//       }
-//     };
-
-//   }
-// })
+  const positionYSK = {
+    lat: 35.6486,
+    lng: 138.57693
+  };
+  const positionDokasuga = {
+    lat: 35.658687875856664,
+    lng: 138.56954332425778
+  };
+  const positionDCV = {
+    lat: 35.66014231235642,
+    lng: 138.57494260883726
+  };
+  return (
+    <div style={{ height: "800px", width: "600px" }}>
+      <GoogleMaps
+        bootstrapURLKeys={{ key: "AIzaSyAbm3waJB9Cygfqgvqt1k8KjaGg9gKX3-M" }}
+        defaultCenter={defaultLatLng}
+        defaultZoom={14}
+      >
+        <Marker position={positionYSK} />
+        <Marker position={positionDokasuga} />
+        <Marker position={positionDCV} />
+      </GoogleMaps>
+    </div>
+  );
+}
