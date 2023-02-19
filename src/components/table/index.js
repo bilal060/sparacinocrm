@@ -134,7 +134,7 @@ export function CampaignTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[92px] top-[33px]"
+                className="absolute left-[90px] top-[33px]"
               >
                 <path
                   fillRule="evenodd"
@@ -599,7 +599,7 @@ export function ContactDocumentsTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[65px] top-[33px]"
+                className="absolute left-[54px] top-[33px]"
               >
                 <path
                   fillRule="evenodd"
@@ -669,7 +669,7 @@ export function ContactOpportunitiesTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[65px] top-[33px]"
+                className="absolute left-[54px] top-[33px]"
               >
                 <path
                   fillRule="evenodd"
@@ -740,7 +740,7 @@ export function ContactCampaignsTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[65px] top-[33px]"
+                className="absolute left-[82px] top-[34px]"
               >
                 <path
                   fillRule="evenodd"
