@@ -8,26 +8,29 @@ import UserIcon from "../../assets/images/svg/UserIcon";
 import MenuList from "./MenuList";
 
 function AppHeader() {
+
+
+
     return (
         <>
-            <header class="custom-header">
-                <Link class="navbar-brand d-lg-inline-block d-none" to={''}>
-                    <div class="custom-header-logo">
+            <header className="custom-header">
+                <Link className="navbar-brand d-lg-inline-block d-none" to={''}>
+                    <div className="custom-header-logo">
                         <Logo />
                     </div>
                 </Link>
-                <nav class="navbar navbar-expand-lg navbar-dark w-100 align-items-center justify-content-lg-center justify-content-start">
-                    <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                <nav className="navbar navbar-expand-lg navbar-dark w-100 align-items-center justify-content-lg-center justify-content-start">
+                    <button className="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse custom-navbar position-lg-relative position-absolute bg-lg-transparent" id="navbarTogglerDemo01">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 custom-header-list">
+                    <div className="collapse navbar-collapse custom-navbar position-lg-relative position-absolute bg-lg-transparent" id="navbarTogglerDemo01">
+                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0 custom-header-list">
                             <MenuList />
                         </ul>
                     </div>
                 </nav>
-                <div class="custom-header-rightside">
+                <div className="custom-header-rightside">
                     <div>
                         <SearchIcon />
                     </div>

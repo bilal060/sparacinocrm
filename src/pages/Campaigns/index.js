@@ -11,7 +11,7 @@ export default function Campaigns() {
       <div
         className="tab-pane fade in active"
         id="tasks-pill"
-        role="tabpanel"
+        role="tabpanel" 
         aria-labelledby="tasks-pill-tab"
       >
         <main className="custom-main-content mt-2 pt-4">

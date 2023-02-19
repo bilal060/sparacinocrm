@@ -2256,14 +2256,14 @@ export default function GIS() {
   </ul>
 </div>
 
-    <div class="position-relative">
+    <div className="position-relative">
     <div id="propertylistinmap">
-        <div class="property-list-map">
-            <div class="list-header d-flex justify-content-between align-items-center ">
-                <h2 class="results">21 Results</h2>
-                <button class="button-blue">Add all to campaign</button>
+        <div className="property-list-map">
+            <div className="list-header d-flex justify-content-between align-items-center ">
+                <h2 className="results">21 Results</h2>
+                <button className="button-blue">Add all to campaign</button>
             </div>
-            <div class="list">
+            <div className="list">
                 <GISCard location="525 Roosevelt Ave, Sunnyvale" neighborhood="Rockridge" area="10,598" units="18" type="Apartment House" />
                 <GISCard location="525 Roosevelt Ave, Sunnyvale" neighborhood="Rockridge" area="10,598" units="18" type="Apartment House" />
                 <GISCard location="525 Roosevelt Ave, Sunnyvale" neighborhood="Rockridge" area="10,598" units="18" type="Apartment House" />

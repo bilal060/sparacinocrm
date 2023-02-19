@@ -1,5 +1,4 @@
 import React from "react";
-import DropdownArrow from "../../images/dropdownArrow";
 
 export default function Edit() {
   return (
@@ -7,7 +6,6 @@ export default function Edit() {
       <select name="Edit" id="action-edit" className="custom-action-edit-input">
         <option value="Edit">Edit</option>
       </select>
-      <DropdownArrow/>
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         className="position-absolute"

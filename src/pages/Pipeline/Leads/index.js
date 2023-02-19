@@ -5,28 +5,28 @@ import { PipelineHeading } from "../../../components/heading";
 import SubNav from "../../../components/sub-nav";
 export default function PipelineLeads() {
   return (
-    <main class="  pt-0 ">
+    <main className="  pt-0 ">
         <SubNav item1="Pipeline" item2="Finalization" item3="Marketing"/>
 
-      <div class="tab-content " id="pills-tabContent">
+      <div className="tab-content " id="pills-tabContent">
         <div
-          class="tab-pane fade in active"
+          className="tab-pane fade in active"
           id="pipeline-leads-pill"
           role="tabpanel"
           aria-labelledby="pipeline-leads-pill-tab"
         >
-          <main class="custom-main-content mt-2 pt-0">
-            <h1 class="custom-heading">Leads</h1>
+          <main className="custom-main-content mt-2 pt-0">
+            <h1 className="custom-heading">Leads</h1>
 
-            <div class="d-inline-flex align-items-end">
-              <div class="pipeline-item  d-flex align-items-end">
-                <div class="position-relative custom-search-filter w-100">
+            <div className="d-inline-flex align-items-end">
+              <div className="pipeline-item  d-flex align-items-end">
+                <div className="position-relative custom-search-filter w-100">
                   <input
                     type="text"
                     placeholder="Search this board"
-                    class="w-100"
+                    className="w-100"
                   />
-                  <div class="position-absolute custom-search-icon">
+                  <div className="position-absolute custom-search-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -42,61 +42,61 @@ export default function PipelineLeads() {
                   </div>
                 </div>
               </div>
-              <div class="pipeline-item ">
+              <div className="pipeline-item ">
                 <Dropdown label="City" option1="Barkely" option2="Dubai"/>
               </div>
-              <div class="pipeline-item"></div>
-              <div class="pipeline-item">
+              <div className="pipeline-item"></div>
+              <div className="pipeline-item">
               <Dropdown label="Sort" option1="Last Updated" option2="Dubai"/>
               </div>
             </div>
 
-            <div class="d-inline-flex mt-4 pt-3 mb-5">
-              <div class="pipeline-item">
+            <div className="d-inline-flex mt-4 pt-3 mb-5">
+              <div className="pipeline-item">
                 <PipelineHeading heading="Business Development Call"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading=" Not selling"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading="Create first appointment"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading="First appointment confirmed"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading="Create second appointment"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading="Second appointment confirmed"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading="Sign listing agreement"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading="Signing of listing agreement confirmed"/>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
               </div>
-              <div class="pipeline-item">
+              <div className="pipeline-item">
               <PipelineHeading heading="Finish Leads Cycle"/>
               </div>
             </div>
@@ -104,23 +104,23 @@ export default function PipelineLeads() {
         </div>
 
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="pipeline-marketing-pill"
           role="tabpanel"
           aria-labelledby="pipeline-marketing-pill-tab"
         >
-          <main class="custom-main-content mt-2 pt-0">
-            <h1 class="custom-heading">Marketing</h1>
+          <main className="custom-main-content mt-2 pt-0">
+            <h1 className="custom-heading">Marketing</h1>
 
-            <div class="d-inline-flex align-items-end">
-              <div class="pipeline-item  d-flex align-items-end">
-                <div class="position-relative custom-search-filter w-100">
+            <div className="d-inline-flex align-items-end">
+              <div className="pipeline-item  d-flex align-items-end">
+                <div className="position-relative custom-search-filter w-100">
                   <input
                     type="text"
                     placeholder="Search this board"
-                    class="w-100"
+                    className="w-100"
                   />
-                  <div class="position-absolute custom-search-icon">
+                  <div className="position-absolute custom-search-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -136,24 +136,24 @@ export default function PipelineLeads() {
                   </div>
                 </div>
               </div>
-              <div class="pipeline-item ">
-                <form class="d-flex flex-column m-0">
-                  <label class="custom-label-city mb-1" for="">
+              <div className="pipeline-item ">
+                <form className="d-flex flex-column m-0">
+                  <label className="custom-label-city mb-1" for="">
                     City
                   </label>
-                  <select name="City" class="custom-select-city w-100">
+                  <select name="City" className="custom-select-city w-100">
                     <option value="Barkely">Barkely</option>
                     <option value="Dubai">Dubai</option>
                   </select>
                 </form>
               </div>
-              <div class="pipeline-item"></div>
-              <div class="pipeline-item">
-                <form class="d-flex flex-column m-0">
-                  <label class="custom-label-city mb-1" for="">
+              <div className="pipeline-item"></div>
+              <div className="pipeline-item">
+                <form className="d-flex flex-column m-0">
+                  <label className="custom-label-city mb-1" for="">
                     sort
                   </label>
-                  <select name="City" class="custom-select-city w-100">
+                  <select name="City" className="custom-select-city w-100">
                     <option value="Barkely">Last Updated</option>
                     <option value="Dubai">Dubai</option>
                   </select>
@@ -161,61 +161,61 @@ export default function PipelineLeads() {
               </div>
             </div>
 
-            <div class="d-inline-flex mt-4 pt-3 mb-5">
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+            <div className="d-inline-flex mt-4 pt-3 mb-5">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Create Marketing Material
                 </p>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>
 
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Cold Call Buyers
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Internal Email Blast
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Post on Premium Markets
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   External Marketing Blast
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Showing #1
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Showing #2
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Marketing Email Blast
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Showing #3
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Showing #4
                 </p>
               </div>
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Final Marketing Email Blast
                 </p>
               </div>
@@ -223,22 +223,22 @@ export default function PipelineLeads() {
           </main>
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="pipeline-finaliztion-pill"
           role="tabpanel"
           aria-labelledby="pipeline-finaliztion-pill-tab"
         >
-          <main class="custom-main-content mt-2 pt-0">
-            <h1 class="custom-heading">Finalization</h1>
-            <div class="d-inline-flex align-items-end w-100">
-              <div class="pipeline-item  d-flex align-items-end">
-                <div class="position-relative custom-search-filter w-100">
+          <main className="custom-main-content mt-2 pt-0">
+            <h1 className="custom-heading">Finalization</h1>
+            <div className="d-inline-flex align-items-end w-100">
+              <div className="pipeline-item  d-flex align-items-end">
+                <div className="position-relative custom-search-filter w-100">
                   <input
                     type="text"
                     placeholder="Search this board"
-                    class="w-100"
+                    className="w-100"
                   />
-                  <div class="position-absolute custom-search-icon">
+                  <div className="position-absolute custom-search-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -254,33 +254,33 @@ export default function PipelineLeads() {
                   </div>
                 </div>
               </div>
-              <div class="pipeline-item ">
-                <form class="d-flex flex-column m-0">
-                  <label class="custom-label-city mb-1" for="">
+              <div className="pipeline-item ">
+                <form className="d-flex flex-column m-0">
+                  <label className="custom-label-city mb-1" for="">
                     City
                   </label>
-                  <select name="City" class="custom-select-city w-100">
+                  <select name="City" className="custom-select-city w-100">
                     <option value="Barkely">Barkely</option>
                     <option value="Dubai">Dubai</option>
                   </select>
                 </form>
               </div>
-              <div class="pipeline-item"></div>
-              <div class="pipeline-item">
-                <form class="d-flex flex-column m-0">
-                  <label class="custom-label-city mb-1" for="">
+              <div className="pipeline-item"></div>
+              <div className="pipeline-item">
+                <form className="d-flex flex-column m-0">
+                  <label className="custom-label-city mb-1" for="">
                     sort
                   </label>
-                  <select name="City" class="custom-select-city w-100">
+                  <select name="City" className="custom-select-city w-100">
                     <option value="Barkely">Last Updated</option>
                     <option value="Dubai">Dubai</option>
                   </select>
                 </form>
               </div>
             </div>
-            <div class="d-inline-flex mt-4 pt-3 mb-5">
-              <div class="pipeline-item">
-                <p class="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
+            <div className="d-inline-flex mt-4 pt-3 mb-5">
+              <div className="pipeline-item">
+                <p className="text-Primary-Brand-Default font-16 font-weight-600 mb-5 pb-3">
                   Lorem Ipsum
                 </p>
                 <PipelineCard status="high" name="Mrs. Sarah Williamson" date1="22 Dec, 2022" date2="22 Dec, 2022" city="Dubai" properties="3" date3="22 Dec, 2022"/>

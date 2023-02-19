@@ -12,7 +12,7 @@ import { Modal } from "react-bootstrap";
 import CustomPagination from "../../components/pagination";
 
 export default function ContactDetails() {
-  const [showModal, setShow] = useState(false);
+  const [showModal, setShow] = useState(false); 
   const [showModal2, setShow2] = useState(false);
   const [showModal3, setShow3] = useState(false);
   const [showModal4, setShow4] = useState(false);
@@ -336,73 +336,73 @@ export default function ContactDetails() {
       </section>
       {/* <!-- Document --> */}
       <section>
-        <div class="custom-detail-list mt-5">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="custom-heading-h2">Document</h2>
+        <div className="custom-detail-list mt-5">
+          <div className="d-flex justify-content-between align-items-center">
+            <h2 className="custom-heading-h2">Document</h2>
             <button
               type="button"
-              class="bg-white border-1 custom-task-create"
+              className="bg-white border-1 custom-task-create"
               onClick={() => handleShow3()}
             >
               Upload Document
             </button>
 
             <Modal show={showModal3} onHide={handleClose3}>
-              <div class="modal-content p-32 custom-modal">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="modal-title" id="DocumentModalTitle">
+              <div className="modal-content p-32 custom-modal">
+                <div className="d-flex justify-content-between align-items-center">
+                  <h5 className="modal-title" id="DocumentModalTitle">
                     Upload Document
                   </h5>
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     onClick={() => handleClose3()}
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="py-5" id="uploadDocument">
-                  <div class="row">
-                    <div class="col-6">
+                <div className="py-5" id="uploadDocument">
+                  <div className="row">
+                    <div className="col-6">
                       <input
                         type="text"
-                        class="custom-search-bar pl-2"
+                        className="custom-search-bar pl-2"
                         placeholder="Search Property"
                       />
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                       <select
                         name="taskStatus"
                         id="taskStatus"
-                        class="custom-select-form w-100"
+                        className="custom-select-form w-100"
                       >
                         <option value="Status">Status</option>
                         <option value="task">task</option>
                       </select>
                     </div>
                   </div>
-                  <div class="row pt-5">
-                    <div class="col-12">
+                  <div className="row pt-5">
+                    <div className="col-12">
                       Please Upload a File
                       <br />
                       <input
-                        class="custom-document-file-input pt-4"
+                        className="custom-document-file-input pt-4"
                         type="file"
                       />
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-end">
+                <div className="d-flex justify-content-end">
                   <button
                     type="button"
-                    class="custom-cancel-btn border-0"
+                    className="custom-cancel-btn border-0"
                     onClick={() => handleClose3()}
                   >
                     Close
                   </button>
                   <button
                     type="button"
-                    class="custom-save-btn border-0"
+                    className="custom-save-btn border-0"
                     onclick="UploadDocument()"
                   >
                     Create
@@ -418,56 +418,56 @@ export default function ContactDetails() {
       </section>
       {/* <!-- Opportunity --> */}
       <section>
-        <div class="custom-detail-list mt-5">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="custom-heading-h2">Opportunities</h2>
+        <div className="custom-detail-list mt-5">
+          <div className="d-flex justify-content-between align-items-center">
+            <h2 className="custom-heading-h2">Opportunities</h2>
             <button
               type="button"
-              class="bg-white border-1 custom-task-create"
+              className="bg-white border-1 custom-task-create"
               onClick={() => handleShow4()}
             >
               Create
             </button>
             <Modal show={showModal4} onHide={handleClose4}>
-              <div class="modal-content p-32 custom-modal">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="modal-title" id="opportunitiesModalTitle">
+              <div className="modal-content p-32 custom-modal">
+                <div className="d-flex justify-content-between align-items-center">
+                  <h5 className="modal-title" id="opportunitiesModalTitle">
                     Create Opprtunity
                   </h5>
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     onClick={() => handleClose4()}
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="py-5">
-                  <div class="row">
-                    <div class="col-6">
+                <div className="py-5">
+                  <div className="row">
+                    <div className="col-6">
                       <select
                         name="taskStatus"
                         id="taskStatus"
-                        class="custom-select-form w-100"
+                        className="custom-select-form w-100"
                       >
                         <option value="Type">Type</option>
                         <option value="task">task</option>
                       </select>
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                       <input
                         type="text"
-                        class="custom-search-bar pl-2"
+                        className="custom-search-bar pl-2"
                         placeholder="Name"
                       />
                     </div>
                   </div>
-                  <div class="row pt-5">
-                    <div class="col-12">
+                  <div className="row pt-5">
+                    <div className="col-12">
                       <select
                         name="taskStatus"
                         id="taskStatus"
-                        class="custom-select-form w-100"
+                        className="custom-select-form w-100"
                       >
                         <option value="Type">Property</option>
                         <option value="task">task</option>
@@ -475,15 +475,15 @@ export default function ContactDetails() {
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-end">
+                <div className="d-flex justify-content-end">
                   <button
                     type="button"
-                    class="custom-cancel-btn border-0"
+                    className="custom-cancel-btn border-0"
                     onClick={() => handleClose4()}
                   >
                     Close
                   </button>
-                  <button type="button" class="custom-save-btn border-0">
+                  <button type="button" className="custom-save-btn border-0">
                     Create
                   </button>
                 </div>
@@ -496,44 +496,44 @@ export default function ContactDetails() {
       </section>
       {/* <!-- Campaigns --> */}
       <section>
-        <div class="custom-detail-list mt-5">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="custom-heading-h2">Campaigns</h2>
+        <div className="custom-detail-list mt-5">
+          <div className="d-flex justify-content-between align-items-center">
+            <h2 className="custom-heading-h2">Campaigns</h2>
             <button
               type="button"
-              class="bg-white border-1 custom-task-create"
+              className="bg-white border-1 custom-task-create"
               onClick={() => handleShow5()}
             >
               Create
             </button>
             <Modal show={showModal5} onHide={handleClose5}>
-              <div class="modal-content p-32 custom-modal">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="modal-title" id="CampaignsModalTitle">
+              <div className="modal-content p-32 custom-modal">
+                <div className="d-flex justify-content-between align-items-center">
+                  <h5 className="modal-title" id="CampaignsModalTitle">
                     Create Campaigns
                   </h5>
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     onClick={() => handleClose5()}
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="py-5 mb-5">
-                  <div class="row">
-                    <div class="col-6">
+                <div className="py-5 mb-5">
+                  <div className="row">
+                    <div className="col-6">
                       <input
                         type="text"
-                        class="custom-search-bar pl-2"
+                        className="custom-search-bar pl-2"
                         placeholder="Name"
                       />
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                       <select
                         name="taskStatus"
                         id="taskStatus"
-                        class="custom-select-form w-100"
+                        className="custom-select-form w-100"
                       >
                         <option value="Type">Type</option>
                         <option value="task">task</option>
@@ -541,15 +541,15 @@ export default function ContactDetails() {
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-end">
+                <div className="d-flex justify-content-end">
                   <button
                     type="button"
-                    class="custom-cancel-btn border-0"
+                    className="custom-cancel-btn border-0"
                     onClick={() => handleClose5()}
                   >
                     Close
                   </button>
-                  <button type="button" class="custom-save-btn border-0">
+                  <button type="button" className="custom-save-btn border-0">
                     Create
                   </button>
                 </div>
@@ -562,52 +562,52 @@ export default function ContactDetails() {
       </section>
       {/* <!-- History --> */}
       <section>
-        <div class="custom-detail-list mt-5">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="custom-heading-h2">History</h2>
+        <div className="custom-detail-list mt-5">
+          <div className="d-flex justify-content-between align-items-center">
+            <h2 className="custom-heading-h2">History</h2>
             <button
               type="button"
-              class="bg-white border-1 custom-task-create"
+              className="bg-white border-1 custom-task-create"
               onClick={() => handleShow6()}
             >
               Create
             </button>
             <Modal show={showModal6} onHide={handleClose6}>
-              <div class="modal-content p-32 custom-modal">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="modal-title" id="HistoryModalTitle">
+              <div className="modal-content p-32 custom-modal">
+                <div className="d-flex justify-content-between align-items-center">
+                  <h5 className="modal-title" id="HistoryModalTitle">
                     Create Note
                   </h5>
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     onClick={() => handleClose6()}
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="py-5 mb-5" id="CreateNoteForm">
-                  <div class="row">
-                    <div class="col-12">
+                <div className="py-5 mb-5" id="CreateNoteForm">
+                  <div className="row">
+                    <div className="col-12">
                       <input
                         type="text"
-                        class="custom-search-bar pl-2"
+                        className="custom-search-bar pl-2"
                         placeholder="Name"
                       />
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-end">
+                <div className="d-flex justify-content-end">
                   <button
                     type="button"
-                    class="custom-cancel-btn border-0"
+                    className="custom-cancel-btn border-0"
                     onClick={() => handleClose6()}
                   >
                     Close
                   </button>
                   <button
                     type="button"
-                    class="custom-save-btn border-0"
+                    className="custom-save-btn border-0"
                     onclick="CreateNote()"
                   >
                     Create

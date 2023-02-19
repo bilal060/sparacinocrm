@@ -12,7 +12,8 @@ import CustomPagination from "../../components/pagination";
 export default function Changes() {
   return (
     <>
-      <div
+      <div 
+      
         className="tab-pane fade in active"
         id="tasks-pill"
         role="tabpanel"

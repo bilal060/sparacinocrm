@@ -6,25 +6,25 @@ import SubNav from "../../../components/sub-nav";
 
 export default function PipelineFinalization() {
   return (
-    <main class="  pt-0 ">
+    <main className="  pt-0 ">
       <SubNav item1="Pipeline" item2="Finalization" item3="Marketing" />
       <div
-        class="tab-pane fade in active"
+        className="tab-pane fade in active"
         id="pipeline-finaliztion-pill"
         role="tabpanel"
         aria-labelledby="pipeline-finaliztion-pill-tab"
       >
-        <main class="custom-main-content pt-0">
-          <h1 class="custom-heading">Finalization</h1>
-          <div class="d-inline-flex align-items-end w-100">
-            <div class="pipeline-item  d-flex align-items-end">
-              <div class="position-relative custom-search-filter w-100">
+        <main className="custom-main-content pt-0">
+          <h1 className="custom-heading">Finalization</h1>
+          <div className="d-inline-flex align-items-end w-100">
+            <div className="pipeline-item  d-flex align-items-end">
+              <div className="position-relative custom-search-filter w-100">
                 <input
                   type="text"
                   placeholder="Search this board"
-                  class="w-100"
+                  className="w-100"
                 />
-                <div class="position-absolute custom-search-icon">
+                <div className="position-absolute custom-search-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -40,16 +40,16 @@ export default function PipelineFinalization() {
                 </div>
               </div>
             </div>
-            <div class="pipeline-item ">
+            <div className="pipeline-item ">
               <Dropdown label="City" option1="Barkely" option2="Dubai" />
             </div>
-            <div class="pipeline-item"></div>
-            <div class="pipeline-item">
+            <div className="pipeline-item"></div>
+            <div className="pipeline-item">
               <Dropdown label="Sort" option1="Last Updated" option2="Dubai" />
             </div>
           </div>
-          <div class="d-inline-flex mt-4 pt-3 mb-5">
-            <div class="pipeline-item">
+          <div className="d-inline-flex mt-4 pt-3 mb-5">
+            <div className="pipeline-item">
               <PipelineHeading heading="Lorem Ipsum" />
               <PipelineCard
                 status="high"

@@ -73,3 +73,11 @@ export function GISCard(props) {
 </div>
   )
 }
+export const CustomCard = ({children}) => {
+    return (
+        <div className="custom-card p-4">
+            {children}
+        </div>
+    )
+}
+
