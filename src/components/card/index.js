@@ -1,11 +1,11 @@
 import React from "react";
-
+import UserIcon from '../../assets/images/svg/UserIcon'
 export function PipelineCard(props) {
   return (
     <div class="p-3 pipeline-card">
       <div class="d-flex justify-content-between align-items-center">
         <div class="high-tag">{props.status}</div>
-        <span class="user-img"></span>
+        <span class="user-img"><UserIcon/></span>
       </div>
       <p class="title">{props.name}</p>
       <p>

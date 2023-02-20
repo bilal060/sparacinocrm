@@ -10,12 +10,10 @@ export default function SubNav(props) {
       >
         <li>
           <a
-            id="email-pill-tab"
-            data-toggle="pill"
-            href="#email-pill"
-            role="tab"
-            aria-controls="email-pill"
-            aria-selected="false"
+            onClick={() => {
+              props.onchange("leads");
+            }}
+            className={props.tabType==="leads" || props.tabType==="changes" ? "font-weight-600" : " "}
           >
             {props.item1}
           </a>
@@ -23,9 +21,11 @@ export default function SubNav(props) {
         <li>
           <a
             id="calender-pill-tab"
-            data-toggle="pill"
-            href="#calender-pill"
-            role="tab"
+            className={props.tabType==="finalization" || props.tabType==="reports" ? "font-weight-600" : " "}
+            onClick={() => {
+              props.onchange("finalization");
+            }}
+            
             aria-controls="calender-pill"
             aria-selected="false"
           >
@@ -35,11 +35,12 @@ export default function SubNav(props) {
         <li>
           <a
             id="tasks-pill-tab"
-            data-toggle="pill"
-            href="#tasks-pill"
-            role="tab"
+            className={props.tabType==="marketing" ? "font-weight-600" : " "}
+            onClick={() => {
+              props.onchange("marketing");
+            }}
             aria-controls="tasks-pill"
-            aria-selected="true"
+            aria-selected="false"
           >
             {props.item3}
           </a>
