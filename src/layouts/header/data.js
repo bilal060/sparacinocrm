@@ -12,15 +12,15 @@ const links = [
         dropdownlist: [
             {
                 title: 'Email',
-                path: '/email',
+                path: '/productivity',
             },
             {
                 title: 'Calender',
-                path: '/calender',
+                path: '/productivity',
             },
             {
                 title: 'Tasks',
-                path: '/task',
+                path: '/productivity',
             },
         ]
     },
@@ -37,15 +37,15 @@ const links = [
         dropdownlist: [
             {
                 title: 'Contacts',
-                path: '/contacts',
+                path: '/people',
             },
             {
                 title: 'Leads',
-                path: '/leads',
+                path: '/people',
             },
             {
                 title: 'Accounts',
-                path: '/account',
+                path: '/people',
             },
         ]
     },
@@ -56,15 +56,15 @@ const links = [
         dropdownlist: [
             {
                 title: 'Leads',
-                path: '/leads',
+                path: '/pipeline',
             },
             {
                 title: 'Marketing',
-                path: '/marketing',
+                path: '/pipeline',
             },
             {
                 title: 'Finalization',
-                path: '/finalization',
+                path: '/pipeline',
             },
         ]
     },
@@ -87,11 +87,11 @@ const links = [
         dropdownlist: [
             {
                 title: 'Changes',
-                path: '/changes',
+                path: '/data',
             },
             {
                 title: 'Reports',
-                path: '/reports',
+                path: '/data',
             },
 
         ]

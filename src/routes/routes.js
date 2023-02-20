@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import CampaignsPage from '../pages/Campaigns';
-import ProductivityPage from '../pages/Home';
-import OpportunitiesPage from '../pages/Opportunities';
+import ProductivityPage from '../pages/Productivity';
+import OpportunitiesPage from '../pages/Opportunities'
 import PeoplesPage from '../pages/Peoples';
 import PipelinePage from '../pages/Pipeline';
 import PropertiesPage from '../pages/Properties';
@@ -13,6 +13,7 @@ import PipelineFinalization from "../pages/Pipeline/Finalization";
 import HomePage from "../pages/Home";
 import ContactDetails from '../pages/ContactDetails';
 import Changes from '../pages/Changes';
+import Calender from '../pages/Productivity/Calander';
 
 // import PeoplesPage from '../pages/Peoples';
 // import PipelinePage from '../pages/Pipeline';
@@ -35,6 +36,7 @@ function AppRoutes() {
             <Route path="/pipeline/marketing" element={<PipelineMarketing/>}/>
             <Route path="/pipeline/leads" element={<PipelineLeads/>}/>
             <Route path="/pipeline/finalization" element={<PipelineFinalization/>}/>
+            <Route path="/Productivity/Calander" element={<Calender/>}/>
             {/* <Route path='/data' element={<DataPage />} /> */}
         </Routes>
     );
