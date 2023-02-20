@@ -744,7 +744,7 @@ label {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #507a9b;
+  color: #507a9b !important;
   text-decoration: none;
 }
 
@@ -1498,7 +1498,7 @@ label {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #507a9b;
+  color: #507a9b !important;
   text-decoration: none;
 }
 
