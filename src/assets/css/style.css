@@ -1,15 +1,10 @@
+/* @import url("https://fonts.cdnfonts.com/css/montserrat"); */
+/* @import url(https://fonts.bunny.net/css?family=darker-grotesque); */
 body {
   box-sizing: border-box;
   font-family: "Montserrat";
   margin: 0;
   background-color: #F6F7F8 !important;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: auto !important;
 }
 
 
@@ -30,8 +25,7 @@ li {
   list-style-type: none;
 }
 
-a,
-a:hover {
+a {
   text-decoration: none;
 }
 
@@ -124,10 +118,15 @@ svg {
 
 .font-14 {
   font-size: 14px;
+  line-height: 18px;
 }
 
 .font-16 {
   font-size: 16px;
+}
+
+.font-24 {
+  font-size: 24px;
 }
 
 .font-weight-500 {
@@ -135,7 +134,7 @@ svg {
 }
 
 .font-weight-600 {
-  font-weight: 600 !important;
+  font-weight: 600;
 }
 
 .font-weight-700 {
@@ -144,6 +143,10 @@ svg {
 
 .text-Secondar-70 {
   color: #24272B;
+}
+
+.text-secondary {
+  color: #47505E;
 }
 
 .text-increament {
@@ -291,6 +294,45 @@ label {
   color: #24272B;
 }
 
+.custom-navbar {
+  background-color: #2C4251;
+}
+
+.custom-navbar-logo {
+  height: 64px !important;
+}
+
+.custom-nav-list {
+  margin: 0 !important;
+}
+
+.navbar-collapse.collapse {
+  height: 100vh !important;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-navbar {
+    top: 60px;
+    left: -22px;
+    background: #2C4251;
+    width: 200px !important;
+    justify-content: center;
+    align-items: baseline;
+    height: 100vh !important;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .custom-navbar-list-dropdown {
+    position: absolute;
+    background: #2C4251;
+    left: -21px;
+    padding: 0 26px;
+    top: 61px;
+    padding-bottom: 24px;
+  }
+}
 .main-padding {
   padding-top: 65px !important;
 }
@@ -604,18 +646,24 @@ label {
 }
 
 .custom-main-content .custom-filter-apply {
-  padding: 0px 42px;
-  margin: 0 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 16px;
+  gap: 10px;
+  width: 176px;
+  height: 36px;
+  outline: none;
+  border: none;
   background: #507A9B;
+  color: white;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.5px;
-  height: 36px;
-  border: 0;
-  width: 176px;
-
+  text-transform: uppercase;
 
 }
 
@@ -645,7 +693,6 @@ label {
   background: #FFFFFF;
   border: 1px solid #D1D3D9;
   height: 36px;
-  border-radius: 0 !important;
   width: 176px;
 
 }
@@ -668,15 +715,36 @@ label {
 }
 
 .custom-main-content .custom-pills li a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-weight: 300;
+  font-size: 14px !important;
+  line-height: 18px;
   color: #507A9B;
   text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  order: 1;
 }
 
-.custom-main-content .custom-pills .active a {
-  font-weight: 600;
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  background-color: transparent !important;
+  color: #507A9B !important;
+}
+
+.custom-main-content .custom-pills li a:hover {
+  color: #507A9B !important;
+  background-color: transparent !important;
+}
+
+.custom-main-content .custom-pills li a:active {
+  color: #507A9B !important;
+  background-color: transparent !important;
+}
+
+.custom-main-content .custom-pills li.active a {
+  font-weight: 800 !important;
 }
 
 .custom-main-content .custom-personal-detail .custom-card-heading,
@@ -755,8 +823,9 @@ label {
 
 .sliders_control {
   position: relative;
-  width: 150px;
+  min-width: 160px;
   margin-top: 18px;
+  max-width: 176px;
 }
 
 .sliders_control input[type=range]::-webkit-slider-thumb {
@@ -884,8 +953,8 @@ label {
   z-index: -1;
 }
 
-.property-map {
-  /* background-image: url("/sparacinocrm/custom/themes/images/map.png"); */
+/* .property-map {
+  background-image: url("/sparacinocrm/custom/themes/images/map.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -893,12 +962,12 @@ label {
 }
 
 .user-img {
-  /* background-image: url("/sparacinocrm/custom/themes/images/user.png"); */
+  background-image: url("/sparacinocrm/custom/themes/images/user.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-}
+} */
 
 .property-units .property-item {
   border-right: 1px solid #D1D3D9;
@@ -1121,11 +1190,11 @@ label {
   right: 10px;
 }
 
-.custom-datepicker #custom-datepicker-id .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next span {
-  /* background-image: url("/sparacinocrm/custom/themes/images/next.png") !important; */
+/* .custom-datepicker #custom-datepicker-id .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next span {
+  background-image: url("/sparacinocrm/custom/themes/images/next.png") !important;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .custom-datepicker #custom-datepicker-id .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev {
   width: 20px;
@@ -1138,11 +1207,11 @@ label {
   left: unset !important;
 }
 
-.custom-datepicker #custom-datepicker-id .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev span {
-  /* background-image: url("/sparacinocrm/custom/themes/images/prev.png") !important; */
+/* .custom-datepicker #custom-datepicker-id .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev span {
+  background-image: url("/sparacinocrm/custom/themes/images/prev.png") !important;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .custom-datepicker #custom-datepicker-id .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next:hover,
 .custom-datepicker #custom-datepicker-id .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev:hover {
@@ -1633,6 +1702,8 @@ label {
   display: none;
 }
 
+
+
 /* Show the indicator (dot/circle) when checked */
 .radio-container input:checked~.radio-checkmark:after {
   display: block;
@@ -1722,7 +1793,7 @@ label {
   padding: 6px 10px;
 }
 
-.checkbox-list .custom-checkbox .map-screen-select {
+/* .checkbox-list .custom-checkbox .map-screen-select {
   all: unset;
   background: #FFFFFF;
   border: 1px solid #D1D3D9;
@@ -1732,12 +1803,12 @@ label {
   line-height: 15px;
   height: 20px;
   color: #767B84;
-  /* background: url("/sparacinocrm/custom/themes/images/select-arrow.png") no-repeat #FFFFFF; */
+  background: url("/sparacinocrm/custom/themes/images/select-arrow.png") no-repeat #FFFFFF;
   background-position: bottom 7px right 4px;
   background-color: #FFFFFF;
   background-size: 12px 7px;
   padding: 0 22px 0 5px;
-}
+} */
 
 .checkbox-list .custom-checkbox .map-screen-input {
   all: unset;
@@ -1762,19 +1833,19 @@ label {
   color: #507A9B;
 }
 
-.checkbox-list .checkmark {
+/* .checkbox-list .checkmark {
   position: absolute;
   top: 0;
   left: 0;
   height: 32px;
   padding: 8px 35px 8px 10px;
   background-color: #507A9B;
-  /* background-image: url("/sparacinocrm/custom/themes/images/Rectangle.png"); */
+  background-image: url("/sparacinocrm/custom/themes/images/Rectangle.png");
   background-repeat: no-repeat;
   background-position: bottom 8px right 10px;
   border-radius: 4px;
   width: 130px;
-}
+} */
 
 .checkbox-list .custom-checkbox:hover input~.checkmark {
   background-color: #5a809d;
@@ -1794,15 +1865,17 @@ label {
   display: block;
 }
 
-.checkbox-list .custom-checkbox .checkmark:after {
+/* .checkbox-list .custom-checkbox .checkmark:after {
   right: 10px;
   top: 8px;
   width: 16px;
   height: 16px;
-  /* background-image: url("/sparacinocrm/custom/themes/images/Checkbox.png"); */
-}
+  background-image: url("/sparacinocrm/custom/themes/images/Checkbox.png");
+} */
 
+/*# sourceMappingURL=style.css.map */
 
+/*# sourceMappingURL=style.css.map */
 @media (min-width: 320px) and (max-width: 978px) {
   .col-sm-3 {
     display: inline-block !important;
@@ -1824,4 +1897,236 @@ ul.clickMenu.selectmenu.SugarActionMenu li.sugar_action_button label.glyphicon.b
 .bootstrap-checkbox-hidden,
 .massall {
   display: inline-block !important;
+}
+
+.h-400px {
+  height: 400px !important;
+}
+
+.h-28px {
+  height: 28px !important;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.home-checkbox {
+  background: #FFFFFF;
+  border: 1px solid #A8ADB8;
+  box-shadow: inset 0px 1px 3px rgba(36, 39, 43, 0.25);
+  border-radius: 2px !important;
+}
+
+
+#homepage .custom-task-table tr th {
+  border-top: 0 !important;
+}
+
+.w-84px {
+  width: 84px !important;
+}
+
+
+
+.new {
+  padding: 50px;
+}
+
+.home-checkbox1 {
+  display: block;
+}
+
+.home-checkbox1 input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.home-checkbox1 label {
+  position: relative;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.home-checkbox1 label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  background: #FFFFFF;
+  border: 1px solid #A8ADB8;
+  box-shadow: inset 0px 1px 3px rgba(36, 39, 43, 0.25);
+  border-radius: 2px;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.home-checkbox1 input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 5px;
+  height: 11px;
+  border: solid #47505E;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-pagination a:nth-child(2) {
+  height: 24px;
+  width: 24px;
+  background: #507A9B;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.label-css {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  width: max-content;
+  height: 23px;
+  background: #EEEFF1;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.marketing-pipline {
+  background: rgba(240, 159, 85, 0.2);
+  border: 1px solid #F09F55;
+}
+
+.leads-pipline {
+  background: rgba(123, 97, 255, 0.2);
+  border: 1px solid #7B61FF;
+}
+
+.finalization-pipline {
+  background: rgba(22, 178, 150, 0.2);
+  border: 1px solid #16B296;
+}
+
+.custom-pills-poeple {
+  border: 0 !important;
+}
+
+.custom-pills-poeple .nav-item .nav-link {
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 18px;
+  color: #507A9B;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.custom-pills-poeple .nav-item .nav-link.active {
+  font-weight: 700 !important;
+}
+
+.m-w-180px {
+  min-width: 180px;
+}
+
+.m-w-130px {
+  min-width: 130px;
+}
+
+.m-w-100px {
+  min-width: 100px;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+
+@media only screen and (max-width:1300px) and (min-width:1100px) {
+  .allproperty-header .responsive-class-property {
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .responsive-class-property {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+@media only screen and (max-width:550px) {
+  .responsive-class-property-filter {
+    flex-direction: column !important;
+  }
+}
+
+.rounded-4 {
+  border-radius: 4px !important;
+}
+
+.filter-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px;
+  gap: 10px;
+  width: max-content;
+  height: 36px;
+  outline: none;
+  border: none;
+  background: #507A9B;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.orange-filter-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 16px;
+  gap: 10px;
+  width: max-content;
+  height: 36px;
+  outline: none;
+  border: none;
+background: #CDA12E;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.gap-8{
+  gap: 8px !important;
 }
