@@ -5,54 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc420d7-3518-4082-8d12-effda2c9727e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/svg/NoticficationIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/svg/UserIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/svg/logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/svg/searchIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/activity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/meetingPlan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/myTasks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/sales.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/downIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/greaterThanIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/lessThanIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/searchIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/upIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/selects/homePageSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/header/MenuList/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/header/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Data/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Peoples/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Pipeline/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Productivity/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Properties/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/edit/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/edit/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/heading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/heading/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Checkbox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Rectangle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/dropdownArrow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/user.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/main/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Poeple/Accounts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Poeple/Contacts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Poeple/Leads/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Poeple/Poeple-Main/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Poeple/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Properties/Search-Property/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Properties/Search-Property2/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/header/MenuList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/header/MenuList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/main/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Campaigns/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Campaigns/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Changes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Changes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ContactDetails/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContactDetails/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/GIS/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GIS/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pipeline/Finalization/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pipeline/Finalization/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pipeline/Leads/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pipeline/Leads/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pipeline/Marketing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pipeline/Marketing/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -96,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676802278520</updated>
-      <workItem from="1676802280163" duration="2648000" />
+      <workItem from="1676802280163" duration="3286000" />
+      <workItem from="1676878024338" duration="1710000" />
     </task>
     <servers />
   </component>

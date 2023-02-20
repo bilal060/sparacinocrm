@@ -19,17 +19,10 @@ function AppHeader() {
                         <Logo />
                     </div>
                 </Link>
-                <nav className="navbar navbar-expand-lg navbar-dark w-100 align-items-center justify-content-lg-center justify-content-start">
-                    <button className="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse custom-navbar position-lg-relative position-absolute bg-lg-transparent" id="navbarTogglerDemo01">
-                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0 custom-header-list">
+
+                        <ul className="mr-auto mt-2 mt-lg-0 custom-header-list">
                             <MenuList />
                         </ul>
-                    </div>
-                </nav>
                 <div className="custom-header-rightside">
                     <div>
                         <SearchIcon />

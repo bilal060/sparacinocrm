@@ -23,10 +23,6 @@ body {
   height: auto !important;
 }
 
-body {
-  margin-top: 65px !important;
-}
-
 .gm-bundled-control {
   bottom: 150px !important;
   right: 41px !important;
@@ -344,109 +340,10 @@ label {
   }
 }
 
-.custom-header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background-color: #2c4251;
-  top: 0;
-  padding: 0px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 64px;
-}
-
-.custom-header .custom-header-list li a {
-  padding: 20px 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.custom-header .navbar-toggler-icon path {
-  stroke: #ffffff;
-}
-
-@media screen and (min-width: 1400px) {
-  .custom-header {
-    padding: 0px 112px !important;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .custom-header {
-    padding: 0px 80px;
-  }
-}
-
-.custom-header .custom-header-list {
-  display: flex;
-  align-items: center;
-  margin: 0 !important;
-  padding: 0;
-}
-
-@media screen and (max-width: 992px) {
-  .custom-header .custom-header-list li {
-    height: 50px;
-    width: 100%;
-    padding-left: 30px;
-  }
-}
-
-.custom-header .custom-header-list li .nav-item {
-  padding: 20px 8px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-@media screen and (min-width: 1400px) {
-  .custom-header .custom-header-list li .nav-item {
-    padding: 20px 12px;
-  }
-}
-
-.custom-header .custom-header-list li .nav-item:hover,
-.custom-header .custom-header-list li .custom-dropdown-item:hover {
-  font-weight: 500;
-}
-
-.custom-header .custom-header-list li .custom-dropdown-menu {
-  background: #ffffff;
-  box-shadow: 0px 0px 10px rgba(69, 69, 69, 0.08),
-    0px 14px 28px rgba(67, 67, 67, 0.15);
-  border-radius: 4px;
-  border: 0;
-}
-
-.custom-header .custom-header-list li .custom-dropdown-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #507a9b !important;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.custom-header .custom-header-rightside {
-  display: flex !important;
-  align-items: center !important;
-  gap: 24px !important;
-  justify-content: flex-end !important;
-}
 
 .main-padding {
   padding-top: 65px !important;
 }
-
 .custom-padding-32 {
   padding-top: 32px !important;
 }
