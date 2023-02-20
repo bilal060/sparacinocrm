@@ -1,37 +1,27 @@
 import React, { useState } from 'react'
-import AllAccountsPage from './Accounts'
-import AllContactsPage from './Contacts'
-import LeadsPage from './Leads'
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import SubNav from "../../components/sub-nav";
+import PipelineLeads from "../../components/pipeline/leads";
+import PipelineFinalization from "../../components/pipeline/finalization";
+import PipelineMarketing from "../../components/pipeline/marketing";
 
 
 
 const Poeple = () => {
 
-    const [key, setKey] = useState('leads');
-
+    const [tabType, setTabType]=useState('leads')
+    const data =['accounts','contact','leads'];
     return (
         <>
 
             <div className="custom-main-content mt-2 pt-4">
-                <Tabs
-                    id="controlled-tab-example"
-                    activeKey={key}
-                    onSelect={(k) => setKey(k)}
-                    className="mb-3 justify-content-center custom-pills-poeple pb-5 mb-5 pt-4 gap-32"
-                >
-                    <Tab eventKey="leads" title="Leads">
-                        <LeadsPage />
-                    </Tab>
-                    <Tab eventKey="contacts" title="Contacts">
-                        <AllContactsPage />
-                    </Tab>
-                    <Tab eventKey="accounts" title="Accounts" >
-                        <AllAccountsPage />
-                    </Tab>
-                </Tabs>
-
+                <SubNav
+                    tabType={tabType}
+                    onchange={(v)=>setTabType(v)}
+                    items={data}
+                />
+                {tabType === "accounts" && <PipelineLeads/>}
+                {tabType === "contact" && <PipelineFinalization/>}
+                {tabType === "leads" && <PipelineMarketing/>}
             </div>
         </>
     )
