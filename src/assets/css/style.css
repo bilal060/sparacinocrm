@@ -16,7 +16,7 @@ body {
 
 #map {
   position: absolute;
-  top: 194px;
+  top: 148px;
   bottom: 0;
   width: 100%;
 }
@@ -409,7 +409,7 @@ label {
 
 @media screen and (min-width: 1200px) {
   .custom-main-content {
-    padding: 66px 80px;
+    padding: 66px 64px;
     padding-top: 0;
 
   }
@@ -953,8 +953,8 @@ label {
   z-index: -1;
 }
 
-/* .property-map {
-  background-image: url("/sparacinocrm/custom/themes/images/map.png");
+.property-map {
+  /* background-image: url("/sparacinocrm/custom/themes/images/map.png"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -962,12 +962,12 @@ label {
 }
 
 .user-img {
-  background-image: url("/sparacinocrm/custom/themes/images/user.png");
+  background-image: url("../images/user.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-} */
+}
 
 .property-units .property-item {
   border-right: 1px solid #D1D3D9;
@@ -1075,6 +1075,7 @@ label {
   width: 100%;
   height: 32px;
   padding-left: 28px;
+  cursor: pointer;
 }
 
 .email .email-sidebar .email-sidebar-item svg {
@@ -1452,12 +1453,12 @@ label {
 }
 
 
-#propertylistinmap {
+/* #propertylistinmap {
   position: absolute;
   top: 100px;
   left: 32px;
-}
-
+} */
+/* 
 #propertylistinmap .property-list-map {
   border: 1px solid #D1D3D9;
   border-radius: 8px;
@@ -1467,7 +1468,7 @@ label {
   background: #FFFFFF;
   width: 464px;
   height: calc(100vh - 330px);
-}
+} */
 
 #propertylistinmap .property-list-map .list-header {
   padding: 32px 23px 26px 32px;
@@ -1497,12 +1498,12 @@ label {
   color: #24272B;
 }
 
-#propertylistinmap {
+/* #propertylistinmap {
   position: absolute;
   top: 100px;
   left: 32px;
   z-index: 1;
-}
+} */
 
 
 
@@ -1614,7 +1615,7 @@ label {
 .checkbox-list .custom-checkbox p {
   position: absolute;
   z-index: 1111;
-  max-width: 90px !important;
+  max-width: 95px !important;
   color: #FFFFFF;
   left: 10px;
   font-weight: 600;
@@ -2129,4 +2130,89 @@ background: #CDA12E;
 }
 .gap-8{
   gap: 8px !important;
+}
+.fc-dayGridDay-button{
+  margin-left:350px !important;
+}
+.fc .fc-toolbar{
+  justify-content:normal !important;
+}
+.fc-button-primary{
+  background-color: white !important;
+  border-color:transparent !important;
+  color:gray !important;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active{
+background-color:#CDA12E !important;
+color:#fff !important;
+border-color:transparent !important;
+}
+.react-datepicker__day--selected{
+  background-color: #CDA12E !important;
+  border-radius:30px !important;
+}
+
+.react-datepicker {
+   background-color: none !important; 
+  border: none !important; 
+}
+.react-datepicker__month{
+  background: #F6F7F8 !important; 
+  margin:0px !important;
+}
+.S_Form{
+  position: absolute;
+    right: 10px;
+    display:block !important;
+}
+#calendar {
+  position: relative !important;
+}
+.Icon{
+  background-color: #F6F7F8 !important;
+  border-radius: 5px;
+  border: none !important;
+}
+.imput_Field{
+  background: #f6f7f8 !important;
+  border: none !important;
+}
+.react-datepicker__header {
+  text-align: center;
+  background-color:  #F6F7F8 !important;
+  /* border-bottom: 1px solid #aeaeae; */
+  border-top-left-radius: 0.3rem;
+}
+.datepicker__month-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range), .react-datepicker__quarter-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range), .react-datepicker__year-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+  background-color: #CDA12E ;
+  border-radius:30px !important;
+}
+.fc .fc-highlight{
+  background:#CDA12E !important;
+}
+
+
+.img1 {
+  background-image: url() ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+} 
+.fc-h-event{
+  background: transparent !important;
+  border: transparent !important;
+}
+.fc-today-button{
+  background:#F4F4F5 !important;
+  color:gray !important;
+}
+.fc-next-button{
+  background:#F4F4F5 !important;
+}
+.fc-prev-button{
+  background:#F4F4F5 !important;
+}
+.fc-direction-ltr .fc-toolbar>*>:not(:first-child) {
+  margin-left: 0.2em !important;
 }

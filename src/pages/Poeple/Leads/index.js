@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../../../components/heading'
+import {Heading} from '../../../components/heading'
 import GreaterThanIcon from '../../../components/images/greaterThanIcon'
 import LessThanIcon from '../../../components/images/lessThanIcon'
 import SearchIcon from '../../../components/images/searchIcon'
@@ -103,7 +103,7 @@ const LeadsPage = () => {
         <>
 
             <div className="d-flex justify-content-between align-items-md-center flex-md-row flex-column">
-                <Heading>All Leads</Heading>
+            <Heading heading="All Leads"/>
                 <div className="d-flex align-items-md-end justify-content-between flex-md-row flex-column gap-32 " >
                     <form className="d-flex flex-column m-0">
                         <div>

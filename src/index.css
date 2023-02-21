@@ -35,7 +35,13 @@ body {
   top:0px;
   bottom: 0;
   width: 100%;
+  height: 100vh;
 }
+.mapboxgl-canvas{
+  width:"";
+  height: 100vh !important
+}
+
 
 li {
   list-style-type: none;
@@ -415,7 +421,7 @@ label {
 
 @media screen and (min-width: 1200px) {
   .custom-main-content {
-    padding: 66px 80px;
+    padding: 66px 64px;
     padding-top: 0;
   }
 }
@@ -961,7 +967,7 @@ label {
 }
 
 .user-img {
-  /*background-image: url("../src/images/user.png");*/
+  background-image: url("../src/assets/images/user.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1512,13 +1518,13 @@ label {
   top: unset !important;
 }
 
-#propertylistinmap {
+/* #propertylistinmap {
   position: absolute;
-  /* top: 100px; */
+  top: 191px;
   top: 25px;
   left: 32px;
   z-index: 1;
-}
+} */
 
 #propertylistinmap .property-list-map {
   border: 1px solid #d1d3d9;
@@ -1560,12 +1566,12 @@ label {
   color: #24272b;
 }
 
-/* #propertylistinmap {
+#propertylistinmap {
   position: absolute;
-  top: 100px;
+  top: 210px;
   left: 32px;
   z-index: 1;
-} */
+}
 
 #propertylistinmap .property-list-map .list-header {
   padding: 32px 23px 26px 32px;
@@ -1596,7 +1602,7 @@ label {
 }
 
 .map-menu {
-  padding: 20px 32px 16px 32px;
+  padding: 20px 32px 0px 32px !important;
   width: 100%;
   background: #ffffff;
   z-index: 112;
@@ -1675,7 +1681,7 @@ label {
 .checkbox-list .custom-checkbox p {
   position: absolute;
   z-index: 1111;
-  max-width: 90px !important;
+  max-width: 95px !important;
   color: #ffffff;
   left: 10px;
   font-weight: 600;
@@ -1907,7 +1913,7 @@ label {
   line-height: 15px;
   height: 20px;
   color: #767b84;
-  max-width: 50px;
+  max-width: 80px !important;
 }
 
 .checkbox-list .custom-checkbox .dropdown-item {
@@ -1927,11 +1933,11 @@ label {
   height: 32px;
   padding: 8px 35px 8px 10px;
   background-color: #507a9b;
-  /*background-image: url("../src/images/Rectangle.png");*/
+  background-image: url("../src/assets/images/Rectangle.png");
   background-repeat: no-repeat;
   background-position: bottom 8px right 10px;
   border-radius: 4px;
-  width: 130px;
+  width: 140px;
 }
 
 .checkbox-list .custom-checkbox:hover input ~ .checkmark {
@@ -1957,7 +1963,7 @@ label {
   top: 8px;
   width: 16px;
   height: 16px;
-  /*background-image: url("../src/images/Checkbox.png");*/
+  background-image: url("../src/assets/images/Checkbox.png");
 }
 
 @media (min-width: 320px) and (max-width: 978px) {
@@ -2226,4 +2232,7 @@ input[type="checkbox"] {
 tbody tr th:nth-child(1){
   text-align: initial;
 
+}
+.h-40px{
+  height: 40px!important
 }

@@ -30,15 +30,70 @@ const GISOptions = ({ options }) => {
   );
 };
 export function DropdownButton({ options }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); 
   };
   return (
-    <div className="dropdown">
+    <div className="">
       <button onClick={toggleDropdown}>
         {isOpen && <GISOptions options={options} />}
       </button>
     </div>
   );
 }
+
+export function DropdownDivider() {
+  return (
+    <div
+    className="dropdown-menu"
+    aria-labelledby="dropdownMenuEditButton"
+  >
+    <p className="">Markup</p>
+    <a className="dropdown-item" href="#">
+      Change Target Layer
+    </a>
+    <a className="dropdown-item" href="#">
+      Create New Markup
+    </a>
+    <a className="dropdown-item" href="#">
+      Turn Measure On
+    </a>
+    <div className="dropdown-divider" />
+    <a className="dropdown-item" href="#">
+      Draw Polygon
+    </a>
+    <a className="dropdown-item" href="#">
+      Draw Line
+    </a>
+    <a className="dropdown-item" href="#">
+      Draw Circle
+    </a>
+    <a className="dropdown-item" href="#">
+      Draw Rectangle
+    </a>
+    <div className="dropdown-divider" />
+    <a className="dropdown-item" href="#">
+      Draw Freehand Polygon
+    </a>
+    <a className="dropdown-item" href="#">
+      Draw Freehand Line
+    </a>
+    <div className="dropdown-divider" />
+    <a className="dropdown-item" href="#">
+      Overlay Site Plan
+    </a>
+    <a className="dropdown-item" href="#">
+      Place Icon
+    </a>
+    <a className="dropdown-item" href="#">
+      Place Label
+    </a>
+    <div className="dropdown-divider" />
+    <a className="dropdown-item" href="#">
+      Clear Drawing
+    </a>
+  </div>
+  )
+}
+

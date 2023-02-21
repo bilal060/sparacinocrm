@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomCard from '../card'
+import {CustomCard} from '../card'
 import DownIcon from '../images/downIcon'
 import UpIcon from '../images/upIcon'
 

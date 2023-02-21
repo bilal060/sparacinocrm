@@ -1,36 +1,31 @@
 import * as React from "react";
-import { Heading } from "../../components/heading";
-import { ChangesTable } from "../../components/table";
-import "../../index.css";
-import SubNav from "../../components/sub-nav";
-import {Dropdown} from "../../components/dropdown";
-import CustomPagination from "../../components/pagination";
-import Search from "../../images/search";
+import {Heading} from "../../../components/heading";
+import {ReportsTable } from "../../../components/table";
+// import "../../index.css";
+import SubNav from "../../../components/sub-nav";
+import CustomPagination from "../../../components/pagination";
+import Search from "../../../images/search";
 
-export default function Changes() {
+export default function Reports() {
   return (
     <>
-      <div 
-      
+      <div
         className="tab-pane fade in active"
         id="tasks-pill"
         role="tabpanel"
         aria-labelledby="tasks-pill-tab"
       >
-        <SubNav item1="Changes" item2="Reports" />
         <main className="custom-main-content mt-2 pt-4">
           <div className="row align-items-start align-items-lg-center">
             <div className="col-lg-3">
-              <Heading heading="All Changes" />
+            <Heading heading="Reports" />
             </div>
             <div className="col-lg-9">
               <div
                 className="d-flex align-items-end justify-content-lg-end"
-                style={{ gap: "32px", flexWrap: "wrap" }}
+                style={{ gap: '32px', flexWrap : "wrap" }}
               >
-                <Dropdown label="Source" option1="dubai" option2="Barkely" />
-                <Dropdown label="City" option1="dubai" option2="Barkely" />
-                <div className="position-relative custom-search-filter">
+                 <div className="position-relative custom-search-filter">
                   <input type="text" placeholder="Filter" />
                   <div className="position-absolute custom-search-icon">
                     <Search/>
@@ -45,9 +40,9 @@ export default function Changes() {
               </div>
             </div>
           </div>
-          <ChangesTable />
+          <ReportsTable />
         </main>
-        <CustomPagination count="1" />
+        <CustomPagination count="1"/>
       </div>
     </>
   );

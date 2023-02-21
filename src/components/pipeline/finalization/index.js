@@ -1,31 +1,16 @@
-import React from 'react'
-import Search from '../../../images/search'
-import { PipelineCard } from '../../card'
-import { Dropdown } from '../../dropdown'
-import { PipelineHeading } from '../../heading'
+import React from "react";
+import { PipelineCard } from "../../card";
+import { Dropdown } from "../../dropdown";
+import { Heading, PipelineHeading } from "../../heading";
+import TypeSearch from "../../ui/Search";
 
 export default function PipelineFinalization() {
   return (
-    <div
-    className="tab-pane fade in active"
-    id="pipeline-finaliztion-pill"
-    role="tabpanel"
-    aria-labelledby="pipeline-finaliztion-pill-tab"
-  >
     <main className="custom-main-content pt-0">
-      <h1 className="custom-heading">Finalization</h1>
+      <Heading heading="Finalization" />
       <div className="d-inline-flex align-items-end w-100">
         <div className="pipeline-item  d-flex align-items-end">
-          <div className="position-relative custom-search-filter w-100">
-            <input
-              type="text"
-              placeholder="Search this board"
-              className="w-100"
-            />
-            <div class="position-absolute custom-search-icon">
-              <Search />
-            </div>
-          </div>
+          <TypeSearch />
         </div>
         <div className="pipeline-item ">
           <Dropdown label="City" option1="Barkely" option2="Dubai" />
@@ -50,6 +35,5 @@ export default function PipelineFinalization() {
         </div>
       </div>
     </main>
-  </div>
-  )
+  );
 }
