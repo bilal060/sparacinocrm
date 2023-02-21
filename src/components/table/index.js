@@ -363,7 +363,7 @@ export function ReportsTable() {
                 height="8"
                 viewBox="0 0 12 8"
                 fill="none"
-                className="absolute left-[53px] top-[33px] "
+                className="absolute left-[60px] top-[33px] "
               >
                 <path
                   fillRule="evenodd"

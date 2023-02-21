@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Heading from '../../../components/heading'
+import {Heading} from '../../../components/heading'
 import GreaterThanIcon from '../../../components/images/greaterThanIcon'
 import LessThanIcon from '../../../components/images/lessThanIcon'
 import SearchIcon from '../../../components/images/searchIcon'
@@ -137,7 +137,7 @@ const SearchPropertyPage = () => {
         <div className='custom-main-content mt-2 pt-4'>
 
             <div className='mb-5'>
-                <Heading>All Properties</Heading>
+            <Heading heading="All Properties"/>
             </div>
             <div className="d-flex align-items-md-start justify-content-between flex-md-row flex-column gap-32 pt-2 allproperty-header"  >
                 <form className="d-flex align-items-xl-end justify-content-between flex-xl-row flex-md-column responsive-class-property gap-32">

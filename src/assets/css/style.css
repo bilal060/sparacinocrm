@@ -16,7 +16,7 @@ body {
 
 #map {
   position: absolute;
-  top: 194px;
+  top: 148px;
   bottom: 0;
   width: 100%;
 }
@@ -409,7 +409,7 @@ label {
 
 @media screen and (min-width: 1200px) {
   .custom-main-content {
-    padding: 66px 80px;
+    padding: 66px 64px;
     padding-top: 0;
 
   }
@@ -953,8 +953,8 @@ label {
   z-index: -1;
 }
 
-/* .property-map {
-  background-image: url("/sparacinocrm/custom/themes/images/map.png");
+.property-map {
+  /* background-image: url("/sparacinocrm/custom/themes/images/map.png"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -962,12 +962,12 @@ label {
 }
 
 .user-img {
-  background-image: url("/sparacinocrm/custom/themes/images/user.png");
+  background-image: url("../images/user.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-} */
+}
 
 .property-units .property-item {
   border-right: 1px solid #D1D3D9;
@@ -1452,12 +1452,12 @@ label {
 }
 
 
-#propertylistinmap {
+/* #propertylistinmap {
   position: absolute;
   top: 100px;
   left: 32px;
-}
-
+} */
+/* 
 #propertylistinmap .property-list-map {
   border: 1px solid #D1D3D9;
   border-radius: 8px;
@@ -1467,7 +1467,7 @@ label {
   background: #FFFFFF;
   width: 464px;
   height: calc(100vh - 330px);
-}
+} */
 
 #propertylistinmap .property-list-map .list-header {
   padding: 32px 23px 26px 32px;
@@ -1497,12 +1497,12 @@ label {
   color: #24272B;
 }
 
-#propertylistinmap {
+/* #propertylistinmap {
   position: absolute;
   top: 100px;
   left: 32px;
   z-index: 1;
-}
+} */
 
 
 
@@ -1614,7 +1614,7 @@ label {
 .checkbox-list .custom-checkbox p {
   position: absolute;
   z-index: 1111;
-  max-width: 90px !important;
+  max-width: 95px !important;
   color: #FFFFFF;
   left: 10px;
   font-weight: 600;

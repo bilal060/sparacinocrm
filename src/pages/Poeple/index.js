@@ -1,30 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import SubNav from "../../components/sub-nav";
-import PipelineLeads from "../../components/pipeline/leads";
-import PipelineFinalization from "../../components/pipeline/finalization";
-import PipelineMarketing from "../../components/pipeline/marketing";
-
-
+import AllAccountsPage from "./Accounts";
+import AllContactsPage from "./Contacts";
+import LeadsPage from "./Leads";
 
 const Poeple = () => {
+  // const [tabType, setTabType]=useState('Accounts')
+  // const data =['Accounts','Contact','Leads'];
+  const tabs = [
+    { title: "Accounts",name:"Accounts" ,content: <AllAccountsPage/>},
+    { title: "Contacts",name:"Contacts" ,content: <AllContactsPage/> },
+    { title: "Leads",name:"Leads" ,content: <LeadsPage/> },
+  ];
+  return (
+    <>
+      <div className="custom-main-content mt-2 pt-4">
+        <SubNav tabs={tabs} />
+      </div>
 
-    const [tabType, setTabType]=useState('leads')
-    const data =['accounts','contact','leads'];
-    return (
-        <>
-
-            <div className="custom-main-content mt-2 pt-4">
+      {/* <div className="custom-main-content mt-2 pt-4">
                 <SubNav
                     tabType={tabType}
                     onchange={(v)=>setTabType(v)}
                     items={data}
                 />
-                {tabType === "accounts" && <PipelineLeads/>}
-                {tabType === "contact" && <PipelineFinalization/>}
-                {tabType === "leads" && <PipelineMarketing/>}
-            </div>
-        </>
-    )
-}
+                {tabType === "Accounts" && <AllAccountsPage/>}
+                {tabType === "Contact" && <AllContactsPage/>}
+                {tabType === "Leads" && <LeadsPage/>}
+            </div> */}
+    </>
+  );
+};
 
-export default Poeple
+export default Poeple;

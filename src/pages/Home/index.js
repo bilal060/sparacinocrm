@@ -4,6 +4,7 @@ import HomePageSelect from "../../components/selects/homePageSelect";
 import MeetingPlan from "../../components/home/meetingPlan";
 import MyTasks from "../../components/home/myTasks";
 import Sales from "../../components/home/sales";
+import Activity from '../../components/home/activity';
 
 const HomePage = () => {
     return (
@@ -11,7 +12,7 @@ const HomePage = () => {
             <div className="custom-activity container-fluid p-0 ">
                 <div className="row mb-3">
                     <div className="col-3">
-                        <Heading className="custom-heading">Activity</Heading>
+                    <Heading heading="Activity"/>
                     </div>
                     <div className="col-9 text-right">
                         <form action="#" className="m-0">
@@ -23,13 +24,13 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="row pt-1">
-                    {/* <Activity /> */}
+                    <Activity />
                 </div>
             </div>
 
             <div className="custom-sales container-fluid p-0">
                 <div className="d-flex pt-lg-5 mb-3 pt-0 justify-content-between align-items-center">
-                    <Heading >Sales Pipeline</Heading>
+                <Heading heading="Sales Pipeline"/>
                     <div className="text-right">
                         <form action="#" className="m-0">
                             <HomePageSelect myname="week" myid="custom-week" myclassName="custom-select-form">
@@ -47,7 +48,8 @@ const HomePage = () => {
             <div className="custom-today-agenda container-fluid p-0 ">
                 <div className="row mt-3 pt-lg-5 pt-0">
                     <div className="col-lg-4 pr-lg-4">
-                        <Heading className="mb-3"> Today's Agenda</Heading>
+                    <Heading heading="Today's Agenda"/>
+
                         <MeetingPlan />
                     </div>
                     <div className="col-lg-8 pt-lg-0 pt-5 mt-lg-0 mt-4 pl-4">

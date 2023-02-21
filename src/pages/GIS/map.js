@@ -1,41 +1,46 @@
-import GoogleMaps from "google-map-react";
-import React from "react";
-import { Map, Marker } from "google-maps-react";
+// import React, { useRef, useEffect, useState } from "react";
+// import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+// import MapboxDraw from "@mapbox/mapbox-gl-draw";
+// import * as turf from '@turf/turf'
 
-const targets = [
-  { lat: 35.64860429083234, lng: 138.57693376912908 },
-  { lat: 35.64760429083234, lng: 138.57493376912908 }
-];
 
-export default function Create() {
-  const defaultLatLng = {
-    lat: 35.64860429083234,
-    lng: 138.57693376912908
-  };
-
-  const positionYSK = {
-    lat: 35.6486,
-    lng: 138.57693
-  };
-  const positionDokasuga = {
-    lat: 35.658687875856664,
-    lng: 138.56954332425778
-  };
-  const positionDCV = {
-    lat: 35.66014231235642,
-    lng: 138.57494260883726
-  };
-  return (
-    <div style={{ height: "800px", width: "600px" }}>
-      <GoogleMaps
-        bootstrapURLKeys={{ key: "AIzaSyAbm3waJB9Cygfqgvqt1k8KjaGg9gKX3-M" }}
-        defaultCenter={defaultLatLng}
-        defaultZoom={14}
-      >
-        <Marker position={positionYSK} />
-        <Marker position={positionDokasuga} />
-        <Marker position={positionDCV} />
-      </GoogleMaps>
-    </div>
-  );
-}
+// mapboxgl.accessToken = 'pk.eyJ1IjoiYmlsYWxsIiwiYSI6ImNsY3l1YzB2bDA0bHYzcXFvN2ZkODBmMDUifQ.SzofkdBg0GBjQP-rQ5WYbw';
+// const map = new mapboxgl.Map({
+// container: 'map', // container ID
+// // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+// style: 'mapbox://styles/bilall/clcz47x23014a14pgt2ggh79j', // style URL
+// center: [-91.874, 42.76], // starting position [lng, lat]
+// zoom: 12 // starting zoom
+// });
+ 
+// const draw = new MapboxDraw({
+// displayControlsDefault: false,
+// // Select which mapbox-gl-draw control buttons to add to the map.
+// controls: {
+// polygon: true,
+// trash: true
+// },
+// // Set mapbox-gl-draw to draw by default.
+// // The user does not have to click the polygon control button first.
+// defaultMode: 'draw_polygon'
+// });
+// map.addControl(draw);
+ 
+// map.on('draw.create', updateArea);
+// map.on('draw.delete', updateArea);
+// map.on('draw.update', updateArea);
+ 
+// function updateArea(e) {
+// const data = draw.getAll();
+// const answer = document.getElementById('calculated-area');
+// if (data.features.length > 0) {
+// const area = turf.area(data);
+// // Restrict the area to 2 decimal points.
+// const rounded_area = Math.round(area * 100) / 100;
+// answer.innerHTML = `<p><strong>${rounded_area}</strong></p><p>square meters</p>`;
+// } else {
+// answer.innerHTML = '';
+// if (e.type !== 'draw.delete')
+// alert('Click the map to draw a polygon.');
+// }
+// }
