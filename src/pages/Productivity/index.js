@@ -1,5 +1,6 @@
 import React from 'react'
 import Datepicker from './DatePicker'
+import Email from './Email'
 import {MyCalendar} from './FullCalander'
 
 export default function ProductivityPage() {
@@ -21,11 +22,14 @@ export default function ProductivityPage() {
     </li>
   </ul>
   <div className="tab-content" id="pills-tabContent">
+  <div className="tab-pane fade" id="email-pill" role="tabpanel" aria-labelledby="email-pill-tab">
+      <Email/>
+    </div>
     <div className="tab-pane fade" id="calender-pill" role="tabpanel" aria-labelledby="calender-pill-tab">
       <div className="d-flex mt-3">
         <div className="custom-datepicker px-3">
        <Datepicker/>
-          <div className="events-list">
+          <div className="events-list mt-6">
             <p className="day text-highlight"> <span className="font-weight-700">Today </span> 11/27/2022</p>
             <ul>
               <li>

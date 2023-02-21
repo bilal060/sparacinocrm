@@ -14,7 +14,7 @@ import Calender from '../pages/Productivity/Calander';
 // import PeoplesPage from '../pages/Peoples';
 // import PipelinePage from '../pages/Pipeline';
 // import PropertiesPage from '../pages/Properties';
-import DataPage from "../pages/Data";
+import DataPage from "../pages/Data";                                                                                                                                                        
 import Poeple from "../pages/Poeple";
 
 function AppRoutes() {
@@ -23,7 +23,7 @@ function AppRoutes() {
             <Route path='/' element={<HomePage />} />
             <Route path='/productivity' element={<ProductivityPage />} />
             <Route path='/properties' element={<PropertiesPage />} />
-            <Route path='/people' element={<Poeple />} />
+            <Route pa th='/people' element={<Poeple />} />
             <Route path='/campaigns' element={<CampaignsPage />} />
             <Route path='/contactDetails' element={<ContactDetails />} />
             <Route path='/changes' element={<Changes />} />
