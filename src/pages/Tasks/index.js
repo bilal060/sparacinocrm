@@ -4,6 +4,7 @@ import {Heading} from "../../components/heading";
 import CustomPagination from "../../components/pagination";
 import SubNav from "../../components/sub-nav";
 import { TaskTable } from "../../components/table";
+import Genarictables from "../../components/generic-table/genarictables";
 import "../../index.css";
 
 
@@ -18,6 +19,7 @@ export default function Tasks() {
             <CreateButton buttonName="Create Task" />
           </div>
           <TaskTable />
+          <Genarictables/>
         </main>
           <CustomPagination count="1"/>
       </div>

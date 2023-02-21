@@ -16,6 +16,7 @@ export default function Pipeline() {
       item2="Finalization"
       item3="Marketing"
     />
+  
     {tabType === "leads" && <PipelineLeads/>}
     {tabType === "finalization" && <PipelineFinalization/>}
     {tabType === "marketing" && <PipelineMarketing/>}

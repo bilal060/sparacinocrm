@@ -10,7 +10,8 @@ import Tasks from "../pages/Tasks";
 import HomePage from "../pages/Home";
 import ContactDetails from '../pages/ContactDetails';
 import Changes from '../pages/Changes';
-
+// import leads page copy and set routes
+import PipelineLeadscopy from '../components/pipeline/leads/indexcopy.js';
 function AppRoutes() {
     return (
         <Routes>
@@ -25,6 +26,8 @@ function AppRoutes() {
             <Route path='/gis' element={<GIS />} />
             <Route path="/tasks" element={<Tasks/>}/>
             <Route path='/pipeline' element={<PipelinePage />} />
+            {/* Leads routs */}
+            <Route path='/leads' element={<PipelineLeadscopy />} />
             {/* <Route path='/data' element={<DataPage />} /> */}
         </Routes>
     );
