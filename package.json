@@ -26,12 +26,9 @@
     "react": "^18.2.0",
     "react-big-calendar": "^1.6.8",
     "react-bootstrap": "^2.7.0",
-<<<<<<< HEAD
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
-=======
     "react-datepicker": "^4.10.0",
->>>>>>> 57f053ceece6b63a84305e104ce150e72b2efc55
     "react-dom": "^18.2.0",
     "react-google-maps": "^9.4.5",
     "react-mapbox-gl-draw": "^2.0.4",

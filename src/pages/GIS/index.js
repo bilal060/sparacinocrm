@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
-import MapboxDraw from "@mapbox/mapbox-gl-draw";
 import { GISCard } from "../../components/card";
 import "./map";
 import {
@@ -22,7 +21,15 @@ import {
   Search,
 } from "../../images/map";
 import { DropdownButton, DropdownDivider } from "../../components/dropdown";
-import CheckboxDropdown, { Label } from "../../components/GIS";
+import {
+  Characteristics,
+  Checkbox,
+  FilterHeading,
+  FilterLabels,
+  Location,
+  PropertyType,
+} from "../../components/GIS";
+import CheckboxLabel from "../../components/GIS";
 
 export default function GIS() {
   mapboxgl.accessToken =
@@ -244,24 +251,15 @@ export default function GIS() {
           </div>
         </div>
         <ul className="checkbox-list mt-3 mb-0 p-0">
-          {/* <li>
+          <li>
             <div className="dropdown">
               <label className="custom-checkbox">
-                <p
-                  className="bg-transparent border-0 w-100 dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuIncludeAreaButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Include Area
-                </p>
+                <CheckboxLabel label="Include Area" />
                 <div
                   className="dropdown-menu custom-dropdown-menu"
-                  aria-labelledby="dropdownMenuIncludeAreaButton"
+                  aria-labelledby="dropdownMenuExcludeAreaButton"
                 >
-                  <h5 className="dropdown-heeading">Include Area</h5>
+                  <FilterHeading heading="Include Area" />
                   <a className="dropdown-item" href="#">
                     Add Polygon
                   </a>
@@ -272,517 +270,140 @@ export default function GIS() {
                     Add Line
                   </a>
                 </div>
-                <input type="checkbox" className="menu-list-checkbox" />
-                <span className="checkmark" />
+                <Checkbox id="include area" />
               </label>
-            </div>
-          </li> */}
-          <li>
-            <div className="dropdown">
-              <CheckboxDropdown label="Exclude Area" heading="Exclude Area"/>
             </div>
           </li>
           <li>
             <div className="dropdown">
-            <CheckboxDropdown label="Include Area" heading="Include Area"/>
+              <label className="custom-checkbox">
+                <CheckboxLabel label="Exclude Area" />
+                <div
+                  className="dropdown-menu custom-dropdown-menu"
+                  aria-labelledby="dropdownMenuExcludeAreaButton"
+                >
+                  <FilterHeading heading="Exclude Area" />
+
+                  <CheckboxLabel label="Exclude Area" />
+
+                  <a className="dropdown-item" href="#">
+                    Add Polygon
+                  </a>
+                  <a className="dropdown-item" href="#">
+                    Add Circle
+                  </a>
+                  <a className="dropdown-item" href="#">
+                    Add Line
+                  </a>
+                </div>
+                <Checkbox id="Exclude area" />
+              </label>
+            </div>
+          </li>
+          <li>
+            <div className="dropdown">
+              <label className="custom-checkbox" htmlFor="Location">
+                <CheckboxLabel label="Location" />
+                <div
+                  className="dropdown-menu custom-dropdown-menu"
+                  aria-labelledby="dropdownMenLocationButton"
+                >
+                  <FilterHeading heading="Location" />
+                  <div className="d-flex align-items-center">
+                    <a className="custom-btn">Select All</a>
+                    <a className="custom-btn">Select None</a>
+                  </div>
+                  <Location
+                    labels={[
+                      "City",
+                      "Zip",
+                      "Street Name",
+                      "County",
+                      " State Abv.",
+                    ]}
+                  />
+                  </div>
+                <Checkbox id="location" />
+              </label>
             </div>
           </li>
           <li>
             <div className="dropdown">
               <label className="custom-checkbox" htmlFor="ProtoType">
-                <p
-                  className="bg-transparent border-0 w-100"
-                  type="button"
-                  id="dropdownMenLocationButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Property Type
-                </p>
+                <CheckboxLabel label="Property Type" />
+
                 <div
                   className="dropdown-menu custom-dropdown-menu"
                   aria-labelledby="dropdownMenLocationButton"
                 >
-                  <h5 className="dropdown-heeading">Property Type</h5>
+                  <FilterHeading heading="Property Type" />
                   <div className="d-flex align-items-center">
                     <a className="custom-btn">Select All</a>
                     <a className="custom-btn">Select None</a>
                   </div>
-                  <div
-                    className="d-flex align-items-center mt-5"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Multi Family
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Duplex, Triplex, Quadraplex
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Single Family
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Condominium, PUD
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Vacant Residential
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Mobile / Manufacturer
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Residential
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Industrial
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Office
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Retail
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Entertainment
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Hotel / Motel
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Healt care
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-3"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Commercial
-                    </label>
-                  </div>
+                  <PropertyType
+                    labels={[
+                      "Multi Family",
+                      "Duplex, Triplex, Quadraplex",
+                      "Single Family",
+                      "Condominium, PUD",
+                      " Vacant Residential",
+                      " Mobile / Manufacturer",
+                      "Residential",
+                      "Industrial",
+                      "Office",
+                      "Retail",
+                      "Entertainment",
+                      "Hotel / Motel",
+                      "Healt care",
+                      "Commercial",
+                    ]}
+                  />
                 </div>
-                <input
-                  type="checkbox"
-                  className="menu-list-checkbox"
-                  id="ProtoType"
-                  defaultValue="value1"
-                />
-                <span className="checkmark" />
+                <Checkbox id="ProtoType" />
               </label>
             </div>
           </li>
           <li>
             <div className="dropdown">
               <label className="custom-checkbox" htmlFor="Characteristics">
-                <p
-                  className="bg-transparent border-0 w-100"
-                  type="button"
+                <CheckboxLabel
                   id="dropdownMenLocationButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Characteristics
-                </p>
+                  label="Characteristics"
+                />
+
                 <div
                   className="dropdown-menu custom-dropdown-menu"
                   aria-labelledby="dropdownMenLocationButton"
                 >
-                  <h5 className="dropdown-heeading">Characteristics</h5>
+                  <FilterHeading heading="Characteristics" />
+
                   <div className="d-flex align-items-center">
                     <a className="custom-btn">Select All</a>
                     <a className="custom-btn">Select None</a>
                   </div>
-                  <div
-                    className="d-flex align-items-center mt-5"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Year Built
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-4"
-                    style={{ gap: 10 }}
-                  >
-                    <select
-                      name="Cityy"
-                      id="Cityy"
-                      className="map-screen-select"
-                    >
-                      <option value="Starts With">Between</option>
-                    </select>
-                    <input type="text" className="map-screen-input" />
-                    -<input type="text" className="map-screen-input" />
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-5"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Number of Units
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-4"
-                    style={{ gap: 10 }}
-                  >
-                    <select
-                      name="Cityy"
-                      id="Cityy"
-                      className="map-screen-select"
-                    >
-                      <option value="Starts With">Between</option>
-                    </select>
-                    <input type="text" className="map-screen-input" />
-                    -<input type="text" className="map-screen-input" />
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-5"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Building Size
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-4"
-                    style={{ gap: 10 }}
-                  >
-                    <select
-                      name="Cityy"
-                      id="Cityy"
-                      className="map-screen-select"
-                    >
-                      <option value="Starts With">Between</option>
-                    </select>
-                    <input type="text" className="map-screen-input" />
-                    -<input type="text" className="map-screen-input" />
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-5"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Lot Size
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-4"
-                    style={{ gap: 10 }}
-                  >
-                    <select
-                      name="Cityy"
-                      id="Cityy"
-                      className="map-screen-select"
-                    >
-                      <option value="Starts With">Between</option>
-                    </select>
-                    <input type="text" className="map-screen-input" />
-                    -<input type="text" className="map-screen-input" />
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-5"
-                    style={{ gap: 10 }}
-                  >
-                    <input
-                      className="styled-checkbox"
-                      id="styled-checkbox-1"
-                      type="checkbox"
-                      defaultChecked=""
-                      defaultValue="value1"
-                    />
-                    <label
-                      htmlFor="styled-checkbox-1"
-                      className="styled-checkbox-label"
-                    >
-                      Lot Size
-                    </label>
-                  </div>
-                  <div
-                    className="d-flex align-items-center mt-4"
-                    style={{ gap: 10 }}
-                  >
-                    <select
-                      name="Cityy"
-                      id="Cityy"
-                      className="map-screen-select"
-                    >
-                      <option value="Starts With">Between</option>
-                    </select>
-                    <input type="text" className="map-screen-input" />
-                    -<input type="text" className="map-screen-input" />
-                  </div>
+                  <Characteristics
+                    labels={[
+                      "Year Built",
+                      "Number of Units",
+                      "Building Size",
+                      "Lot Size",
+                    ]}
+                  />
                 </div>
-                <input
-                  type="checkbox"
-                  className="menu-list-checkbox"
-                  id="Characteristics"
-                  defaultValue="value1"
-                />
-                <span className="checkmark" />
+                <Checkbox id="Characteristics" />
               </label>
             </div>
           </li>
           <li>
             <div className="dropdown">
               <label className="custom-checkbox" htmlFor="Last-Market-Sale">
-                <p
-                  className="bg-transparent border-0 w-100"
-                  type="button"
-                  id="dropdownMenLocationButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Last Market Sale
-                </p>
+                <CheckboxLabel label="Last Market Sale" />
                 <div
                   className="dropdown-menu custom-dropdown-menu"
                   aria-labelledby="dropdownMenLocationButton"
                 >
-                  <h5 className="dropdown-heeading">Last Market Sale</h5>
+                  <FilterHeading heading="Last Market Sale" />
                   <div className="d-flex align-items-center">
                     <a className="custom-btn">Select All</a>
                     <a className="custom-btn">Select None</a>
@@ -1045,34 +666,21 @@ export default function GIS() {
                     <input type="text" className="map-screen-input" />
                   </div>
                 </div>
-                <input
-                  type="checkbox"
-                  className="menu-list-checkbox"
-                  id="Last-Market-Sale"
-                  defaultValue="value1"
-                />
-                <span className="checkmark" />
+                <Checkbox id="Last-Market-Sale" />
               </label>
             </div>
           </li>
           <li>
             <div className="dropdown">
               <label className="custom-checkbox" htmlFor="Ownership">
-                <p
-                  className="bg-transparent border-0 w-100"
-                  type="button"
-                  id="dropdownMenLocationButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Ownership
-                </p>
+                <CheckboxLabel label="Ownership" />
+
                 <div
                   className="dropdown-menu custom-dropdown-menu"
                   aria-labelledby="dropdownMenLocationButton"
                 >
-                  <h5 className="dropdown-heeading">Ownership</h5>
+                  <FilterHeading heading="Ownership" />
+
                   <div className="d-flex align-items-center">
                     <a className="custom-btn">Select All</a>
                     <a className="custom-btn">Select None</a>
@@ -1226,34 +834,21 @@ export default function GIS() {
                     <input type="text" className="map-screen-input" />
                   </div>
                 </div>
-                <input
-                  type="checkbox"
-                  className="menu-list-checkbox"
-                  id="Ownership"
-                  defaultValue="value1"
-                />
-                <span className="checkmark" />
+                <Checkbox id="Ownership" />
               </label>
             </div>
           </li>
           <li>
             <div className="dropdown">
               <label className="custom-checkbox" htmlFor="Debts">
-                <p
-                  className="bg-transparent border-0 w-100"
-                  type="button"
-                  id="dropdownMenLocationButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Debts
-                </p>
+                <CheckboxLabel label="Debts" />
+
                 <div
                   className="dropdown-menu custom-dropdown-menu"
                   aria-labelledby="dropdownMenLocationButton"
                 >
-                  <h5 className="dropdown-heeading">Debts</h5>
+                  <FilterHeading heading="Debts" />
+
                   <div className="d-flex align-items-center">
                     <a className="custom-btn">Select All</a>
                     <a className="custom-btn">Select None</a>
@@ -1417,34 +1012,20 @@ export default function GIS() {
                     <input type="text" className="map-screen-input" />
                   </div>
                 </div>
-                <input
-                  type="checkbox"
-                  className="menu-list-checkbox"
-                  id="Debts"
-                  defaultValue="value1"
-                />
-                <span className="checkmark" />
+                <Checkbox id="Debts" />
               </label>
             </div>
           </li>
           <li>
             <div className="dropdown">
               <label className="custom-checkbox" htmlFor="People">
-                <p
-                  className="bg-transparent border-0 w-100"
-                  type="button"
-                  id="dropdownMenLocationButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  People
-                </p>
+                <CheckboxLabel label="People" />
+
                 <div
                   className="dropdown-menu custom-dropdown-menu"
                   aria-labelledby="dropdownMenLocationButton"
                 >
-                  <h5 className="dropdown-heeading">People</h5>
+                  <FilterHeading heading="People" />
                   <div
                     className="d-flex align-items-center mt-5"
                     style={{ gap: 10 }}
@@ -1675,13 +1256,7 @@ export default function GIS() {
                     </li>
                   </ul>
                 </div>
-                <input
-                  type="checkbox"
-                  className="menu-list-checkbox"
-                  id="People"
-                  defaultValue="value1"
-                />
-                <span className="checkmark" />
+                <Checkbox id="People" />
               </label>
             </div>
           </li>
