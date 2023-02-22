@@ -9,7 +9,13 @@ import GIS from "../pages/GIS";
 import Tasks from "../pages/Tasks";
 import HomePage from "../pages/Home";
 import ContactDetails from '../pages/ContactDetails';
+<<<<<<< HEAD
 //import Changes from '../pages/Changes';
+=======
+// import Changes from '../pages/Changes';
+// import leads page copy and set routes
+import PipelineLeadscopy from '../components/pipeline/leads/indexcopy.js';
+>>>>>>> e0c6bd84253f9fa768a5451075dde77fa280496e
 import Changes from '../pages/changesReports/Changes';
 import Calender from '../pages/Productivity/Calander';
 
@@ -35,6 +41,11 @@ function AppRoutes() {
             <Route path='/gis' element={<GIS />} />
             <Route path="/tasks" element={<Tasks/>}/>
             <Route path='/pipeline' element={<PipelinePage />} />
+<<<<<<< HEAD
+=======
+            {/* Leads routs */}
+            <Route path='/leads' element={<PipelineLeadscopy />} />
+>>>>>>> e0c6bd84253f9fa768a5451075dde77fa280496e
             {/* <Route path="/pipeline/marketing" element={<PipelineMarketing/>}/>
             <Route path="/pipeline/leads" element={<PipelineLeads/>}/>
             <Route path="/pipeline/finalization" element={<PipelineFinalization/>}/> */}
