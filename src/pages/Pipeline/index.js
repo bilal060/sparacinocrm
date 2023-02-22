@@ -14,21 +14,6 @@ export default function Pipeline() {
   ];
   // console.log(tabType);
   return (
-<<<<<<< HEAD
-    <main className="  pt-0 ">
-    <SubNav
-      tabType={tabType}
-      onchange={(v)=>setTabType(v)}
-      item1="leads"
-      item2="Finalization"
-      item3="Marketing"
-    />
-  
-    {tabType === "leads" && <PipelineLeads/>}
-    {tabType === "finalization" && <PipelineFinalization/>}
-    {tabType === "marketing" && <PipelineMarketing/>}
-    </main>
-=======
     // <main className="  pt-0 ">
     // <SubNav
     //   tabType={tabType}
@@ -42,7 +27,6 @@ export default function Pipeline() {
     <div className="custom-main-content mt-2 pt-4">
     <SubNav tabs={tabs} />
   </div>
->>>>>>> 57f053ceece6b63a84305e104ce150e72b2efc55
   )
 }
 

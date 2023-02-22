@@ -15,4 +15,8 @@
     flex-direction: column;
     /* justify-content: space-between; */
   }
-  
+  /* pipeline cards */
+  .column.do-it-column {
+    min-width: 320px !important; 
+    min-height: 100vh;
+  }

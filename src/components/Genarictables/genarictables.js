@@ -6,7 +6,7 @@ import Edit from "../edit";
 const Genarictables = () => {
   return (
     <>
-      {/* <h1>Genarictables</h1> */}
+      <h1>Genarictables</h1> 
     </>
   )
 }
