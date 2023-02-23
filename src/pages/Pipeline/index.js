@@ -11,7 +11,6 @@ export default function Pipeline() {
     { title: "Marketing", name:"Marketing", content: <PipelineMarketing/> },
   ];
   return (
-<<<<<<< HEAD
     // <main className="  pt-0 ">
     // <SubNav
     //   tabType={tabType}
@@ -22,9 +21,7 @@ export default function Pipeline() {
     // {tabType === "Finalization" && <PipelineFinalization/>}
     // {tabType === "Marketing" && <PipelineMarketing/>}
     // </main>
-=======
 
->>>>>>> e0c6bd84253f9fa768a5451075dde77fa280496e
     <div className="custom-main-content mt-2 pt-4">
     <SubNav tabs={tabs} />
   </div>

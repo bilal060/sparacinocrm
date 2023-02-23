@@ -1,10 +1,8 @@
 import FullCalendar from "@fullcalendar/react";
 import daygridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
-import { useState } from "react";
 
 export const MyCalendar = () => {
-  const [events, setEvents] = useState([]);
 
   return (
     <>

@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import SubNav from "../../components/sub-nav";
 import AllAccountsPage from "./Accounts";
 import AllContactsPage from "./Contacts";
 import LeadsPage from "./Leads";
 
 const Poeple = () => {
-  // const [tabType, setTabType]=useState('Accounts')
-  // const data =['Accounts','Contact','Leads'];
+
   const tabs = [
     { title: "Accounts",name:"Accounts" ,content: <AllAccountsPage/>},
     { title: "Contacts",name:"Contacts" ,content: <AllContactsPage/> },

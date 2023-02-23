@@ -1,8 +1,6 @@
 import * as React from "react";
 import {Heading} from "../../../components/heading";
 import {ReportsTable } from "../../../components/table";
-// import "../../index.css";
-import SubNav from "../../../components/sub-nav";
 import CustomPagination from "../../../components/pagination";
 import Search from "../../../images/search";
 

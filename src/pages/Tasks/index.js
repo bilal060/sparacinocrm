@@ -1,8 +1,4 @@
 import * as React from "react";
-import CreateButton from "../../components/createButton";
-import {Heading} from "../../components/heading";
-import CustomPagination from "../../components/pagination";
-import SubNav from "../../components/sub-nav";
 import { TaskTable } from "../../components/table";
 import Genarictables from "../../components/Genarictables/genarictables";
 import "../../index.css";
